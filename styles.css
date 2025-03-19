@@ -1,86 +1,27 @@
-:root {
-    --primary-color: #4A90E2;
-    --secondary-color: #333;
-    --accent-color: #f39c12;
-    --background-color: #ffffff;
-    --text-color: #444;
-    --shadow-color: rgba(0,0,0,0.1);
+body {
+    padding-top: 70px;
   }
   
-  body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    max-width: 900px;
-    margin: auto;
-    padding: 0 20px;
-  }
-  
+  /* Header customization */
   header {
-    text-align: center;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 40px 0;
+    background: linear-gradient(120deg, #6a11cb, #2575fc);
   }
   
-  header h1 {
-    font-size: 3rem;
+  /* Section titles with a bottom border */
+  section h2 {
+    border-bottom: 3px solid #2575fc;
+    display: inline-block;
+    margin-bottom: 20px;
   }
   
-  nav {
-    background-color: var(--secondary-color);
+  /* Hover effect for cards */
+  .card:hover {
+    transform: translateY(-8px);
+    transition: transform 0.3s ease-in-out;
   }
   
-  nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 10px;
+  /* Additional spacing for footer */
+  footer {
+    margin-top: 50px;
   }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  nav ul li a:hover {
-    color: var(--accent-color);
-  }
-  
-  section {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px var(--shadow-color);
-    padding: 30px;
-    margin-top:30px;
-  }
-  
-  .skills-list span {
-    display:inline-block;
-    background-color:#f4f4f4;
-    padding:8px15px;border-radius:20px;margin-right:8px;margin-bottom:8px;font-size:.9rem;box-shadow:0px2px5pxvar(--shadow-color);transition:.3s;}
-  
-  .skills-list span:hover{
-  transform:translateY(-3px);background-color:#e1eaff;}
-  
-  .project-card{
-  border-left:5pxsolidvar(--primary-color);padding-left:15px;margin-bottom:20px;transition:.3s;}
-  
-  .project-card:hover{
-  transform:translateX(5px);border-left-color:
-  var(--accent-color);}
-  
-  footer{
-  text-align:center;padding:
-  20px;color:#888;margin-top:
-  40px;}
   
