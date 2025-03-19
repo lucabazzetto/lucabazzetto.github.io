@@ -15,40 +15,19 @@
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="profile.jpg" alt="Profile Picture" class="rounded-circle me-3" width="50" height="50">
-      <span class="fw-bold">Luca Bazzetto</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<!-- Hero Section with Integrated Navbar -->
+<header class="hero-section text-white">
 
-<!-- Hero Section -->
-<header class="hero-section text-center text-white py-5">
-  <div class="container">
+  <!-- Hero content -->
+  <div class="container text-center py-5">
+    <img src="profile.png" alt="Profile Picture" class="rounded-circle profile-image mb-4" width="150" height="150">
     <h1 data-aos="fade-up">Luca Bazzetto</h1>
-    <p data-aos="fade-up" data-aos-delay="200">Data Scientist Student</p>
+    <p data-aos="fade-up" data-aos-delay="200">Data Scientist Student | Machine Learning Enthusiast | Sports Analytics Expert</p>
     <!-- Social Media Icons -->
     <div data-aos="fade-up" data-aos-delay="400">
-      <a href="#" target="_blank"><i class="fab fa-github fa-2x mx-2"></i></a>
-      <a href="#" target="_blank"><i class="fab fa-linkedin fa-2x mx-2"></i></a>
-      <a href="#" target="_blank"><i class="fas fa-envelope fa-2x mx-2"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-github fa-2x mx-2 text-white"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin fa-2x mx-2 text-white"></i></a>
+      <a href="#" target="_blank"><i class="fas fa-envelope fa-2x mx-2 text-white"></i></a>
     </div>
   </div>
 </header>
@@ -58,17 +37,13 @@
 
   <!-- About Section -->
   <section id="about" data-aos="fade-right">
-    <h2><i class="fas fa-user"></i> About Me</h2>
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <p>I am a Data Scientist Student with a strong foundation in computer science and a passion for leveraging data to drive insights. Skilled in machine learning, data analysis, and software development.</p>
-      </div>
-    </div>
+    <h2 class="no-underline"><i class="fas fa-user"></i> About Me</h2>
+    <p>I am a Data Scientist Student with a strong foundation in computer science and a passion for leveraging data to drive insights. Skilled in machine learning, data analysis, and software development.</p>
   </section>
 
   <!-- Skills Section -->
   <section id="skills" data-aos="fade-left">
-    <h2><i class="fas fa-laptop-code"></i> Skills & Technologies</h2>
+    <h2 class="no-underline"><i class="fas fa-laptop-code"></i> Skills & Technologies</h2>
 
     <!-- Skills Cards -->
     <div class='row g-4'>
@@ -131,54 +106,34 @@
 
   <!-- Experience Section -->
   <section id='experience' data-aos='fade-up'>
-    <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+    <h2 class="no-underline"><i class="fas fa-briefcase"></i> Professional Experience</h2>
 
-    <!-- Experience Card -->
-    <div class='card shadow-sm mb-3'>
-      <div class='card-body'>
-        <h5>Junior Business Intelligence Analyst - Sinesy SRL (2022)</h5>
-        <ul>
-          <li>Developed and implemented sales forecasting models using statistical methods.</li>
-          <li>Extracted data-driven insights to improve sales forecast accuracy.</li>
-          <li>Collaborated with cross-functional teams to implement BI solutions for decision-making.</li>
-        </ul>
-      </div>
-    </div>
+    <h5>Junior Business Intelligence Analyst - Sinesy SRL (2022)</h5>
+    <ul>
+      <li>Developed and implemented sales forecasting models using statistical methods.</li>
+      <li>Extracted data-driven insights to improve sales forecast accuracy.</li>
+      <li>Collaborated with cross-functional teams to implement BI solutions for decision-making.</li>
+    </ul>
   </section>
 
   <!-- Education Section -->
   <section id='education' data-aos='fade-right'>
-    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+    <h2 class="no-underline"><i class="fas fa-graduation-cap"></i> Education</h2>
 
-    <!-- Education Cards -->
-    <div class="row g-4">
-      <!-- Master's Degree -->
-      <div class="col-md-6">
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <h5>Master in Data Science</h5>
-            <p><i class="fas fa-university"></i> University of Milano-Bicocca</p>
-            <p><i class="fas fa-calendar-alt"></i> Exchange Program until 6/2025</p>
-          </div>
-        </div>
-      </div>
+    <div class="mb-4">
+      <h5>Master in Data Science</h5>
+      <p><i class="fas fa-university"></i> University of Milano-Bicocca | <i class="fas fa-calendar-alt"></i> Exchange Program until 6/2025</p>
+    </div>
 
-      <!-- Bachelor's Degree -->
-      <div class="col-md-6">
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <h5>Bachelor in Internet of Things, Big Data and Web</h5>
-            <p><i class="fas fa-university"></i> University of Udine</p>
-            <p><i class="fas fa-calendar-alt"></i> Graduated in 2022</p>
-          </div>
-        </div>
-      </div>
+    <div>
+      <h5>Bachelor in Internet of Things, Big Data and Web</h5>
+      <p><i class="fas fa-university"></i> University of Udine | <i class="fas fa-calendar-alt"></i> Graduated in 2022</p>
     </div>
   </section>
 
   <!-- Projects Section -->
   <section id='projects' data-aos='fade-up'>
-    <h2><i class="fas fa-project-diagram"></i> University Projects</h2>
+    <h2 class="no-underline"><i class="fas fa-project-diagram"></i> University Projects</h2>
 
     <!-- Project Cards -->
     <div class="row g-4">
@@ -200,7 +155,7 @@
         <div class="card shadow-sm">
           <div class="card-body">
             <h5><i class="fas fa-film"></i> Movie Data Scraper</h5>
-            <p>Scraping tool to collect and analyze movies data from MyMovies, ComingSoon, and IMDb.</p>
+            <p>Created a scraping tool to collect and analyze movies data from MyMovies, ComingSoon, and IMDb.</p>
             <a href="https://github.com/yourusername/movie-data-scraper" class="btn btn-primary" target="_blank">
               <i class="fab fa-github"></i> View Repository
             </a>
@@ -238,40 +193,31 @@
 
   <!-- Achievements Section -->
   <section id='achievements' data-aos='fade-left'>
-    <h2><i class="fas fa-trophy"></i> Achievements & Rewards</h2>
+    <h2 class="no-underline"><i class="fas fa-trophy"></i> Achievements & Rewards</h2>
 
-    <!-- Achievement Card -->
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <h5>KNIME Machine Learning Challenge</h5>
-        <p><i class="fas fa-medal"></i> Secured 2nd place at the competition held in Milan (May 2024).</p>
-      </div>
-    </div>
+    <h5>KNIME Machine Learning Challenge</h5>
+    <p><i class="fas fa-medal"></i> Secured 2nd place at the competition held in Milan (May 2024).</p>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" data-aos="fade-up">
-    <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+    <h2 class="no-underline"><i class="fas fa-envelope"></i> Contact Me</h2>
     
-    <div class="card shadow-sm">
-      <div class="card-body text-center">
-        <div class="row">
-          <div class="col-md-4">
-            <i class="fas fa-envelope fa-2x mb-3"></i>
-            <h5>Email</h5>
-            <p>luca.bazzetto@example.com</p>
-          </div>
-          <div class="col-md-4">
-            <i class="fab fa-linkedin fa-2x mb-3"></i>
-            <h5>LinkedIn</h5>
-            <p><a href="#">linkedin.com/in/lucabazzetto</a></p>
-          </div>
-          <div class="col-md-4">
-            <i class="fab fa-github fa-2x mb-3"></i>
-            <h5>GitHub</h5>
-            <p><a href="#">github.com/lucabazzetto</a></p>
-          </div>
-        </div>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <i class="fas fa-envelope fa-2x mb-3"></i>
+        <h5>Email</h5>
+        <p>luca.bazzetto@example.com</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fab fa-linkedin fa-2x mb-3"></i>
+        <h5>LinkedIn</h5>
+        <p><a href="#">linkedin.com/in/lucabazzetto</a></p>
+      </div>
+      <div class="col-md-4">
+        <i class="fab fa-github fa-2x mb-3"></i>
+        <h5>GitHub</h5>
+        <p><a href="#">github.com/lucabazzetto</a></p>
       </div>
     </div>
   </section>
@@ -279,7 +225,7 @@
 </div>
 
 <!-- Footer -->
-<footer class='text-center py-4 bg-dark text-white'>
+<footer class='text-center py-4 text-white'>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
