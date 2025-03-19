@@ -1,27 +1,47 @@
+/* General Styling */
 body {
-    padding-top: 70px;
+    padding-top:70px;
   }
   
-  /* Header customization */
-  header {
+  .hero-section {
     background: linear-gradient(120deg, #6a11cb, #2575fc);
   }
   
-  /* Section titles with a bottom border */
+  .hero-section h1 {
+    font-size:3rem;
+  }
+  
+  .hero-section p {
+    font-size:1.25rem;
+  }
+  
+  .hero-section a i {
+    color:white;
+  }
+  
+  .hero-section a:hover i {
+    color:#f39c12;
+  }
+  
+  /* Section Titles */
   section h2 {
-    border-bottom: 3px solid #2575fc;
-    display: inline-block;
-    margin-bottom: 20px;
+    font-weight:600;
   }
   
-  /* Hover effect for cards */
+  /* Card Styling */
+  .card {
+   border:none;
+   transition:transform0.3s ease-in-out;
+  }
+  
   .card:hover {
-    transform: translateY(-8px);
-    transition: transform 0.3s ease-in-out;
+   transform:translateY(-10px);
+   box-shadow:0px10px20pxrgba(0,0,0,0.1);
   }
   
-  /* Additional spacing for footer */
+  /* Footer */
   footer {
-    margin-top: 50px;
+   background:#333;
+   color:white;
   }
   
