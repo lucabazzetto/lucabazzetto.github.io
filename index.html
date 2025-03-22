@@ -20,14 +20,16 @@
 
   <!-- Hero content -->
   <div class="container text-center py-5">
-    <img src="profile.png" alt="Profile Picture" class="rounded-circle profile-image mb-4" width="150" height="150">
+    <div class="profile-image-container mb-4">
+      <img src="profile.png" alt="Profile Picture" class="profile-image">
+    </div>
     <h1 data-aos="fade-up">Luca Bazzetto</h1>
-    <p data-aos="fade-up" data-aos-delay="200">Data Scientist Student | Machine Learning Enthusiast | Sports Analytics Expert</p>
+    <p data-aos="fade-up" data-aos-delay="200">Data Scientist Student</p>
     <!-- Social Media Icons -->
     <div data-aos="fade-up" data-aos-delay="400">
-      <a href="#" target="_blank"><i class="fab fa-github fa-2x mx-2 text-white"></i></a>
-      <a href="#" target="_blank"><i class="fab fa-linkedin fa-2x mx-2 text-white"></i></a>
-      <a href="#" target="_blank"><i class="fas fa-envelope fa-2x mx-2 text-white"></i></a>
+      <a href="github.com/lucabazzetto" target="_blank"><i class="fab fa-github fa-2x mx-2 text-white"></i></a>
+      <a href="linkedin.com/in/lucabazzetto" target="_blank"><i class="fab fa-linkedin fa-2x mx-2 text-white"></i></a>
+      <a href="mailto:luca.bazzetto@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x mx-2 text-white"></i></a>
     </div>
   </div>
 </header>
@@ -117,19 +119,15 @@
   </section>
 
   <!-- Education Section -->
-  <section id='education' data-aos='fade-right'>
+<section id='education' data-aos='fade-right'>
     <h2 class="no-underline"><i class="fas fa-graduation-cap"></i> Education</h2>
-
-    <div class="mb-4">
-      <h5>Master in Data Science</h5>
-      <p><i class="fas fa-university"></i> University of Milano-Bicocca | <i class="fas fa-calendar-alt"></i> Exchange Program until 6/2025</p>
-    </div>
-
-    <div>
-      <h5>Bachelor in Internet of Things, Big Data and Web</h5>
-      <p><i class="fas fa-university"></i> University of Udine | <i class="fas fa-calendar-alt"></i> Graduated in 2022</p>
-    </div>
+    <h5>Master in Data Science</h5>
+    <p><i class="fas fa-university"></i> University of Milano-Bicocca, Italy | 2023 - Present</p>
+    <p><i class="fas fa-exchange-alt"></i> Erasmus+ Exchange: Cracow University of Technology, Poland | October 2024 - June 2025</p>
+    <h5>Bachelor in Internet of Things, Big Data and Web</h5>
+    <p><i class="fas fa-university"></i> University of Udine | Graduated in 2022</p>
   </section>
+  
 
   <!-- Projects Section -->
   <section id='projects' data-aos='fade-up'>
@@ -143,7 +141,7 @@
           <div class="card-body">
             <h5><i class="fas fa-brain"></i> Text Classification of arXiv Articles</h5>
             <p>Developed CNN and LSTM models to classify scientific articles from arXiv.</p>
-            <a href="https://github.com/yourusername/arxiv-classification" class="btn btn-primary" target="_blank">
+            <a href="https://github.com/lucabazzetto/arXiv_text_classification" class="btn btn-primary" target="_blank">
               <i class="fab fa-github"></i> View Repository
             </a>
           </div>
@@ -156,7 +154,7 @@
           <div class="card-body">
             <h5><i class="fas fa-film"></i> Movie Data Scraper</h5>
             <p>Created a scraping tool to collect and analyze movies data from MyMovies, ComingSoon, and IMDb.</p>
-            <a href="https://github.com/yourusername/movie-data-scraper" class="btn btn-primary" target="_blank">
+            <a href="https://github.com/lucabazzetto/FilmReviewsScraper" class="btn btn-primary" target="_blank">
               <i class="fab fa-github"></i> View Repository
             </a>
           </div>
@@ -169,7 +167,7 @@
           <div class="card-body">
             <h5><i class="fas fa-smoking"></i> Smoking Status Classification</h5>
             <p>Developed machine learning models in KNIME to classify smoking status based on demographic and health-related features.</p>
-            <a href="https://github.com/yourusername/smoking-classification" class="btn btn-primary" target="_blank">
+            <a href="https://hub.knime.com/s/XeMx8WAPletD3k9t" class="btn btn-primary" target="_blank">
               <i class="fab fa-github"></i> View Repository
             </a>
           </div>
@@ -182,7 +180,7 @@
           <div class="card-body">
             <h5><i class="fas fa-image"></i> Image Classification</h5>
             <p>Neural Network Models to classify images from the MNIST dataset, which consists of handwritten digits.</p>
-            <a href="https://github.com/yourusername/mnist-classification" class="btn btn-primary" target="_blank">
+            <a href="https://github.com/lucabazzetto/Digit_Classification" class="btn btn-primary" target="_blank">
               <i class="fab fa-github"></i> View Repository
             </a>
           </div>
@@ -207,17 +205,17 @@
       <div class="col-md-4">
         <i class="fas fa-envelope fa-2x mb-3"></i>
         <h5>Email</h5>
-        <p>luca.bazzetto@gmail.com</p>
+        <p><a href="mailto:luca.bazzetto@gmail.com">luca.bazzetto@gmail.com</a></p>
       </div>
       <div class="col-md-4">
         <i class="fab fa-linkedin fa-2x mb-3"></i>
         <h5>LinkedIn</h5>
-        <p><a href="#">linkedin.com/in/lucabazzetto</a></p>
+        <p><a href="linkedin.com/in/lucabazzetto">linkedin.com/in/lucabazzetto</a></p>
       </div>
       <div class="col-md-4">
         <i class="fab fa-github fa-2x mb-3"></i>
         <h5>GitHub</h5>
-        <p><a href="#">github.com/lucabazzetto</a></p>
+        <p><a href="github.com/lucabazzetto">github.com/lucabazzetto</a></p>
       </div>
     </div>
   </section>
@@ -230,7 +228,7 @@
     <div class="row">
       <div class="col-md-12">
         <p>© 2024 Luca Bazzetto | Data Scientist Portfolio</p>
-        <p><i class="fas fa-map-marker-alt"></i> Milan, Italy</p>
+        <p><i class="fas fa-map-marker-alt"></i> Krakow, Poland</p>
       </div>
     </div>
   </div>
