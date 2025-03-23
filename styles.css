@@ -87,3 +87,6 @@ body {
     color: white;
   }
   
+  .knime-logo {
+    margin-top: -7px; /* Or use one of the other methods */
+  }
