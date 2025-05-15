@@ -68,15 +68,8 @@ body {
     color: white;
   }
   
-  /* Social media icons */
-  .hero-section a i {
-    color: white;
-    transition: transform 0.3s ease;
-  }
+ 
   
-  .hero-section a i:hover {
-    transform: scale(1.2);
-  }
   
   /* Navbar customization */
   .navbar-dark .navbar-nav .nav-link {
@@ -90,3 +83,32 @@ body {
   .knime-logo {
     margin-top: -7px; /* Or use one of the other methods */
   }
+
+ /* Social media icons */
+  .hero-section a i {
+    color: white;
+    transition: transform 0.3s ease;
+  }
+
+  .hero-section a i:hover {
+    transform: scale(1.2);
+  }
+
+/* Resume Button Styling */
+.resume-btn {
+  background-color: rgba(255,255,255,0.9);
+  color: #0d6efd !important;
+  border: 2px solid white;
+  font-weight: 600;
+  transition: transform 0.3s ease; /* Match social icons' transition */
+}
+
+.resume-btn:hover {
+  background-color: white !important;
+  transform: scale(1.1); /* Match social icons' scale ratio */
+  color: #0d6efd !important;
+}
+
+.resume-btn i {
+  color: inherit !important;
+}
