@@ -3,394 +3,337 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Luca Bazzetto | Data Engineer Portfolio</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome for Icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <!-- AOS (Animate on Scroll) CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-  <!-- Custom CSS -->
+  <title>Luca Bazzetto · Data Engineer</title>
+  <meta name="description" content="Luca Bazzetto, Data Engineer at Electrolux Professional Group. Enterprise data products, analytics platforms, graph data modeling and AI-ready data.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://lucabazzetto.github.io/">
+
+  <!-- Link previews (LinkedIn, WhatsApp, Slack, ...) -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Luca Bazzetto · Data Engineer">
+  <meta property="og:description" content="Data Engineer at Electrolux Professional Group. Enterprise data products, analytics platforms, graph data modeling and AI-ready data.">
+  <meta property="og:url" content="https://lucabazzetto.github.io/">
+  <meta property="og:image" content="https://lucabazzetto.github.io/profile.jpeg">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="profile.jpeg" type="image/png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Luca Bazzetto",
+    "jobTitle": "Data Engineer",
+    "url": "https://lucabazzetto.github.io/",
+    "worksFor": { "@type": "Organization", "name": "Electrolux Professional Group" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Milano-Bicocca" },
+      { "@type": "CollegeOrUniversity", "name": "University of Udine" },
+      { "@type": "CollegeOrUniversity", "name": "Cracow University of Technology" }
+    ],
+    "sameAs": ["https://linkedin.com/in/lucabazzetto", "https://github.com/lucabazzetto"]
+  }
+  </script>
 </head>
 <body>
 
-<!-- Hero Section with Integrated Navbar -->
-<header class="hero-section text-white">
+<!-- Icon sprite (Feather icons, MIT) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></symbol>
+</svg>
 
-  <!-- Hero content -->
-  <div class="container text-center py-5">
-    <div class="profile-image-container mb-4">
-      <img src="profile.jpeg" alt="Profile Picture" class="profile-image">
-    </div>
-    <h1 data-aos="fade-up">Luca Bazzetto</h1>
-    <p data-aos="fade-up" data-aos-delay="200">Data Engineer</p>
+<a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Social Media Icons -->
-    <div data-aos="fade-up" data-aos-delay="400">
-      <a href="mailto:luca.bazzetto@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x mx-2 text-white"></i></a>
-      <a href="https://linkedin.com/in/lucabazzetto" target="_blank"><i class="fab fa-linkedin fa-2x mx-2 text-white"></i></a>
-      <a href="https://github.com/lucabazzetto" target="_blank"><i class="fab fa-github fa-2x mx-2 text-white"></i></a>
-    </div>
-    <!-- Resume -->
-    <div data-aos="fade-up" data-aos-delay="600" class="mt-3">
-      <a href="Luca_Bazzetto_Resume.pdf" target="_blank" class="btn resume-btn">
-        <i class="fas fa-file-pdf me-2"></i>Resume
-      </a>
-    </div>
-    
-  </div>
+<header class="site-header">
+  <nav class="nav container" aria-label="Main">
+    <a class="nav-brand" href="#top">Luca Bazzetto</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#beyond">Beyond work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<!-- Main Content -->
-<div class="container my-5">
+<main id="main">
 
-<!-- About Section -->
- <section id="about" data-aos="fade-right" class="mb-5">
- <h2 class="no-underline text-primary"><i class="fas fa-user-astronaut"></i> About Me</h2>
- <p class="lead fw-bold">Data Engineer focused on building enterprise data products, analytics platforms, and AI-ready data foundations.</p>
- <p>I work across data engineering, analytics, and business enablement, transforming fragmented operational data into governed, scalable solutions that support decision making across multiple business functions. My experience spans enterprise reporting, data integration, graph-based analytics, data governance, and AI enablement.</p>
- <p><em>Off-screen, you can usually find me carving fresh tracks on my snowboard in the mountains or over-engineering Docker containers on my self-hosted Raspberry Pi home server.</em></p>
- </section>
-
- <!-- Current Focus Section -->
- <section id="focus" data-aos="fade-up" class="mb-5">
- <h2 class="no-underline text-info"><i class="fas fa-crosshairs"></i> Current Focus</h2>
- <div class="d-flex flex-wrap gap-2">
- <span class="badge bg-primary fs-6 p-2 shadow-sm"><i class="fas fa-project-diagram"></i> Enterprise Data Products</span>
- <span class="badge bg-success fs-6 p-2 shadow-sm"><i class="fas fa-chart-line"></i> Analytics Platforms</span>
- <span class="badge bg-danger fs-6 p-2 shadow-sm"><i class="fas fa-shield-alt"></i> Data Governance</span>
- <span class="badge bg-warning text-dark fs-6 p-2 shadow-sm"><i class="fas fa-share-alt"></i> Graph Data Modeling</span>
- <span class="badge bg-info text-dark fs-6 p-2 shadow-sm"><i class="fas fa-search"></i> Semantic Search</span>
- <span class="badge bg-secondary fs-6 p-2 shadow-sm"><i class="fas fa-robot"></i> AI Enablement</span>
- </div>
- </section>
-
-<!-- Professional Impact Section -->
- <section id="impact" data-aos="fade-left" class="mb-5">
- <h2 class="no-underline text-success"><i class="fas fa-rocket"></i> Professional Impact</h2>
- <div class="row g-4">
- 
- <!-- SalesBOOST -->
- <div class="col-md-4">
- <div class="card border-0 h-100 shadow-sm" style="border-top: 4px solid #0d6efd;">
- <div class="card-body">
- <h5 class="text-primary"><i class="fas fa-share-alt"></i> SalesBOOST Similarity Graph</h5>
- <p class="small text-muted mb-2"><strong>Problem:</strong> Finding relevant alternative products in a massive catalog.</p>
- <p class="small mb-2"><strong>Impact:</strong> Designed property graph models, similarity scoring, and relationship analysis to prevent customer churn.</p>
- <span class="badge bg-light text-dark border">Oracle Property Graph</span>
- <span class="badge bg-light text-dark border">SQL/PGQ</span>
- </div>
- </div>
- </div>
-
- <!-- Reporting Modernization -->
- <div class="col-md-4">
- <div class="card border-0 h-100 shadow-sm" style="border-top: 4px solid #198754;">
- <div class="card-body">
- <h5 class="text-success"><i class="fas fa-chart-pie"></i> Reporting Modernization</h5>
- <p class="small text-muted mb-2"><strong>Problem:</strong> Legacy reporting was difficult to maintain and scale.</p>
- <p class="small mb-2"><strong>Impact:</strong> Migrated operational reports to APEX, implemented reporting governance and secure authorization logic.</p>
- <span class="badge bg-light text-dark border">Oracle APEX</span>
- <span class="badge bg-light text-dark border">Oracle DB</span>
- </div>
- </div>
- </div>
-
- <!-- AI Analytics -->
- <div class="col-md-4">
- <div class="card border-0 h-100 shadow-sm" style="border-top: 4px solid #ffc107;">
- <div class="card-body">
- <h5 class="text-warning text-dark"><i class="fas fa-robot"></i> AI Usage Analytics</h5>
- <p class="small text-muted mb-2"><strong>Problem:</strong> Needed visibility into enterprise AI adoption rates.</p>
- <p class="small mb-2"><strong>Impact:</strong> Created SQL datasets, KPI modeling, and Power BI integrations for full visibility.</p>
- <span class="badge bg-light text-dark border">Power BI</span>
- <span class="badge bg-light text-dark border">SQL</span>
- </div>
- </div>
- </div>
-
- </div>
- </section>
-
-
-<!-- Experience -->
-  <section id='experience' data-aos='fade-up'>
-  <h2 class="no-underline"><i class="fas fa-briefcase"></i> Professional Experience</h2>
-
-  <div class="experience-item mb-5">
-    <div class="mb-3">
-      <h4 class="mb-1">Data Engineer</h4>
-      <h6 class="text-muted mb-0">
-        <a href="https://www.electroluxprofessional.com/" target="_blank" class="text-secondary text-decoration-none">
-          <i class="fas fa-building text-primary"></i> Electrolux Professional Group
-        </a> 
-        &nbsp;|&nbsp; <i class="fas fa-calendar-alt"></i> Feb 2026 - Present
-      </h6>
+  <!-- Hero -->
+  <section class="hero container" id="top">
+    <img class="hero-photo" src="img/profile-480.jpg" width="480" height="473" alt="Luca Bazzetto">
+    <div>
+      <p class="eyebrow">Data Engineer · Electrolux Professional Group</p>
+      <h1>Luca Bazzetto</h1>
+      <p class="hero-lead">I turn scattered operational data into governed data products, reports and graph models that teams across the business rely on.</p>
+      <!-- TODO: location line, e.g. <p class="hero-meta">Based in …</p> -->
+      <div class="actions">
+        <a class="btn btn-primary" href="Luca_Bazzetto_Resume.pdf" target="_blank" rel="noopener" data-goatcounter-click="download-cv">
+          <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download CV
+        </a>
+        <a class="btn" href="https://linkedin.com/in/lucabazzetto" target="_blank" rel="noopener" data-goatcounter-click="ext-linkedin">
+          <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn
+        </a>
+        <a class="btn" href="https://github.com/lucabazzetto" target="_blank" rel="noopener" data-goatcounter-click="ext-github">
+          <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>GitHub
+        </a>
+        <a class="btn" href="mailto:luca.bazzetto@gmail.com" data-goatcounter-click="email">
+          <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Email
+        </a>
+      </div>
     </div>
-    <ul>
- <li>Built enterprise data products and analytical solutions used across Finance, Supply Chain, Manufacturing, HR, and Operations by integrating data from multiple business systems into a governed analytics platform.</li>
- <li>Improved access to trusted business data through self-service reporting and operational analytics capabilities.</li>
- <li>Designed graph-based data models enabling relationship-driven product analysis, traceability, and advanced exploration of manufacturing data.</li>
- <li>Partnered with business stakeholders and AI teams to deliver scalable data products, analytical services, and trusted data foundations supporting reporting, automation, semantic search, and AI-enabled solutions.</li>
- </ul>
-  </div>
+  </section>
 
-  <div class="experience-item mb-5">
-    <div class="mb-3">
-      <h4 class="mb-1">Junior Data Analyst Intern</h4>
-      <h6 class="text-muted mb-0">
-        <a href="https://www.electroluxprofessional.com/" target="_blank" class="text-secondary text-decoration-none">
-          <i class="fas fa-building text-primary"></i> Electrolux Professional Group
-        </a> 
-        &nbsp;|&nbsp; <i class="fas fa-calendar-alt"></i> Sep 2025 - Feb 2026
-      </h6>
+  <!-- About -->
+  <section class="section container" id="about">
+    <h2 class="section-title">About</h2>
+    <div class="prose">
+      <p>I'm a Data Engineer at Electrolux Professional Group, where I started as an intern in 2025. I integrate data from many business systems into one governed analytics platform, and build the data products on top of it that Finance, Supply Chain, Manufacturing, HR and Operations use.</p>
+      <p>The part I enjoy most is where data engineering meets graphs and AI: modeling products and their relationships as property graphs, and preparing the datasets behind semantic search and AI initiatives. I studied Computer Science in Udine, spent an Erasmus year in Krakow, and I'm finishing an MSc in Data Science in Milan.</p>
+      <p>Off-screen, you can usually find me
+        <button type="button" class="inline-link" data-video-open data-goatcounter-click="video-snowboard">carving fresh tracks on my snowboard<svg class="icon icon-sm" aria-hidden="true"><use href="#i-play"/></svg></button>
+        or over-engineering Docker containers on my <a href="#beyond">self-hosted Raspberry Pi home server</a>.</p>
     </div>
-<ul>
- <li>Drove the migration of operational reports from legacy reporting solutions to Oracle APEX across supply chain, logistics, manufacturing, finance, and operations domains.</li>
- <li>Implemented company-level authorization logic and reporting governance mechanisms to ensure secure and controlled access to business data.</li>
- <li>Built ODI mappings, batch processes, monitoring, AI analytics, and automation solutions using Oracle GoldenGate, Power BI, SQL, Python, Microsoft Graph API, and OCI.</li>
- </ul>
-  </div>
+  </section>
 
-  <div class="experience-item mb-4">
-    <div class="mb-3">
-      <h4 class="mb-1">Junior Business Intelligence Analyst Intern</h4>
-      <h6 class="text-muted mb-0">
-        <a href="https://www.sinesy.it/" target="_blank" class="text-secondary text-decoration-none">
-          <i class="fas fa-building text-primary"></i> Sinesy SRL
-        </a> 
-        &nbsp;|&nbsp; <i class="fas fa-calendar-alt"></i> 2022
-      </h6>
+  <!-- Experience -->
+  <section class="section container" id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div>
+
+      <article class="job">
+        <div class="row-head">
+          <h3 class="job-company"><a href="https://www.electroluxprofessional.com/" target="_blank" rel="noopener">Electrolux Professional Group</a></h3>
+          <span class="meta">Pordenone, Italy</span>
+        </div>
+
+        <div class="role">
+          <div class="row-head">
+            <h4 class="role-title">Data Engineer</h4>
+            <span class="meta">Feb 2026 – Present</span>
+          </div>
+          <ul class="bullets">
+            <li>Build enterprise data products and analytical solutions used across Finance, Supply Chain, Manufacturing, HR and Operations, integrating data from multiple business systems into a governed analytics platform.</li>
+            <li>Develop self-service reporting and operational analytics, reducing reliance on manual extraction and spreadsheet-based workflows.</li>
+            <li>Design graph-based data models for relationship-driven product analysis, traceability and exploration of manufacturing data.</li>
+            <li>Partner with business stakeholders and AI teams to turn operational requirements into data products, analytical services and AI-ready datasets for reporting, automation and semantic search.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="row-head">
+            <h4 class="role-title">Junior Data Analyst Intern</h4>
+            <span class="meta">Sep 2025 – Feb 2026</span>
+          </div>
+          <ul class="bullets">
+            <li>Drove the migration of operational reports from legacy tools to Oracle APEX across supply chain, logistics, manufacturing, finance and operations.</li>
+            <li>Implemented company-level authorization logic so users only access data for their own business entity.</li>
+            <li>Built Oracle Data Integrator (ODI) mappings, Load Plans and scheduled batch processes for enterprise data migration and replication.</li>
+            <li>Developed data monitoring, AI analytics and automation components with Oracle GoldenGate, Qlik Sense, Power BI, SQL, Python, Microsoft Graph API and OCI.</li>
+          </ul>
+        </div>
+
+        <p class="subhead">Selected work</p>
+        <div class="cards">
+          <!-- TODO: add one concrete number to each card (e.g. products in the graph, reports migrated, users) -->
+          <div class="card">
+            <h4>SalesBOOST similarity graph</h4>
+            <p>A property graph over the product catalog that scores similarity between products and surfaces relevant alternatives, so a missing product doesn't mean a lost customer.</p>
+            <ul class="tags"><li>Oracle Property Graph</li><li>SQL/PGQ</li></ul>
+          </div>
+          <div class="card">
+            <h4>Reporting modernization</h4>
+            <p>Moved operational reporting from legacy tools to Oracle APEX, with reporting governance and secure, company-level authorization.</p>
+            <ul class="tags"><li>Oracle APEX</li><li>Oracle Database</li><li>PL/SQL</li></ul>
+          </div>
+          <div class="card">
+            <h4>AI usage analytics</h4>
+            <p>SQL datasets, KPI model and Power BI reporting that give the company visibility into how enterprise AI tools are adopted.</p>
+            <ul class="tags"><li>Power BI</li><li>SQL</li></ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="job">
+        <div class="row-head">
+          <h3 class="job-company"><a href="https://www.sinesy.it/" target="_blank" rel="noopener">Sinesy</a></h3>
+          <span class="meta">Treviso, Italy</span>
+        </div>
+        <div class="role">
+          <div class="row-head">
+            <h4 class="role-title">Junior Business Intelligence Analyst Intern</h4>
+            <span class="meta">Apr 2022 – Aug 2022</span>
+          </div>
+          <ul class="bullets">
+            <li>Developed ARIMA models in Python for retail sales forecasting.</li>
+            <li>Built a pipeline that generates weekly forecasts and integrates them into the Qlik platform.</li>
+          </ul>
+        </div>
+      </article>
+
     </div>
-    <ul>
-      <li>Developed predictive models for retail sales forecasting using ARIMA models in Python </li>
-      <li>Implemented a scalable data pipeline to generate weekly forecasts, which were integrated into the Qlik platform.</li>
-    </ul>
-  </div>
-</section>
-
-
-
-  <!-- Skills Section -->
- <section id="skills" data-aos="fade-left" class="mb-5">
- <h2 class="no-underline text-danger"><i class="fas fa-laptop-code"></i> Technology Ecosystem</h2>
- <div class='row g-4'>
- 
- <div class='col-md-4'>
- <div class='card shadow-sm border-0 bg-light h-100'>
- <div class='card-body text-center'>
- <i class='fas fa-database fa-2x mb-3 text-primary'></i>
- <h5>Data Engineering</h5>
- <p class="small text-muted">Oracle Database, ODI, GoldenGate, OCI, SQL Server, IBM DB2</p>
- </div>
- </div>
- </div>
-
- <div class='col-md-4'>
- <div class='card shadow-sm border-0 bg-light h-100'>
- <div class='card-body text-center'>
- <i class='fas fa-chart-bar fa-2x mb-3 text-success'></i>
- <h5>Analytics & BI</h5>
- <p class="small text-muted">Oracle APEX, Power BI, Qlik Sense, Qlik Cloud</p>
- </div>
- </div>
- </div>
-
- <div class='col-md-4'>
- <div class='card shadow-sm border-0 bg-light h-100'>
- <div class='card-body text-center'>
- <i class='fas fa-project-diagram fa-2x mb-3 text-warning'></i>
- <h5>Graph & AI</h5>
- <p class="small text-muted">Property Graph, SQL/PGQ, Semantic Search, Vector Embeddings, AI Agents</p>
- </div>
- </div>
- </div>
-
- </div>
- </section>
-  
+  </section>
 
   <!-- Projects -->
- <section id='projects' data-aos='fade-up'>
- <h2 class="no-underline text-warning"><i class="fas fa-layer-group"></i> Featured Projects</h2>
+  <section class="section container" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div>
+      <div class="cards">
+        <div class="card">
+          <p class="award">2nd place · KNIME Machine Learning Challenge, Milan 2024</p>
+          <h4>Smoker detection</h4>
+          <p>Predictive pipeline that classifies smoking status from health features, handling class imbalance and automating deployment.</p>
+          <ul class="tags"><li>KNIME Analytics Platform</li></ul>
+          <div class="card-links">
+            <a href="https://hub.knime.com/s/XeMx8WAPletD3k9t" target="_blank" rel="noopener">Workflow<svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a href="https://www.credly.com/badges/c7b5232e-773a-4ea3-9949-60ff622bb0f2" target="_blank" rel="noopener">Badge<svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <div class="card">
+          <h4>Scientific text classification</h4>
+          <p>Deep learning pipeline with CNN and LSTM architectures that classifies arXiv articles, with K-fold cross-validation and automated preprocessing.</p>
+          <ul class="tags"><li>Python</li><li>TensorFlow</li></ul>
+          <div class="card-links">
+            <a href="https://github.com/lucabazzetto/arXiv_text_classification" target="_blank" rel="noopener">Repository<svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <div class="card">
+          <h4>Global energy analysis</h4>
+          <p>Interactive visualization exploring trends in global energy consumption.</p>
+          <ul class="tags"><li>Tableau</li></ul>
+          <div class="card-links">
+            <a href="https://public.tableau.com/app/profile/luca.bazzetto/viz/DataVizProject_17193278899480/Introduction" target="_blank" rel="noopener">Visualization<svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <p class="more">More on GitHub: <a href="https://github.com/lucabazzetto/FilmReviewsScraper" target="_blank" rel="noopener">film reviews scraper</a> · <a href="https://github.com/lucabazzetto?tab=repositories" target="_blank" rel="noopener">all repositories</a></p>
+    </div>
+  </section>
 
- <!-- Featured Project Cards -->
- <div class="row g-4 mb-5">
- <!-- arXiv -->
- <div class="col-md-4">
- <div class="card shadow-sm h-100 border-0">
- <div class="card-body">
- <h6 class="fw-bold"><i class="fas fa-brain text-primary"></i> Text Classification (arXiv)</h6>
- <p class="small">Developed CNN and LSTM models to classify scientific articles.</p>
- <a href="https://github.com/lucabazzetto/arXiv_text_classification" class="btn btn-sm btn-outline-primary" target="_blank"><i class="fab fa-github"></i> View</a>
- </div>
- </div>
- </div>
+  <!-- Skills -->
+  <section class="section container" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <dl class="skills">
+      <dt>Data engineering</dt>
+      <dd>Oracle Database, Oracle Data Integrator (ODI), GoldenGate, OCI, SQL Server, IBM DB2, ETL/ELT, data warehousing, data modeling, data governance</dd>
+      <dt>Languages &amp; query</dt>
+      <dd>SQL (PL/SQL, SQL/PGQ), Python, R, Git</dd>
+      <dt>Analytics &amp; BI</dt>
+      <dd>Oracle APEX, Power BI, Qlik Sense, Qlik Cloud, Tableau, KNIME, KPI modeling, reporting automation</dd>
+      <dt>Graph &amp; AI</dt>
+      <dd>Property graphs, vector embeddings, semantic search, AI agents, Microsoft Graph API, Copilot Studio</dd>
+      <dt>Spoken languages</dt>
+      <dd>Italian (native), English (professional), Spanish (basic)</dd>
+    </dl>
+  </section>
 
- <!-- Knime -->
- <div class="col-md-4">
- <div class="card shadow-sm h-100 border-0">
- <div class="card-body">
- <h6 class="fw-bold"><i class="fas fa-smoking text-danger"></i> KNIME Classification</h6>
- <p class="small">ML models to classify smoking status based on health features.</p>
- <a href="https://hub.knime.com/s/XeMx8WAPletD3k9t" class="btn btn-sm btn-outline-danger" target="_blank">View Project</a>
- </div>
- </div>
- </div>
-
- <!-- Tableau -->
- <div class="col-md-4">
- <div class="card shadow-sm h-100 border-0">
- <div class="card-body">
- <h6 class="fw-bold"><i class="fas fa-chart-line text-success"></i> Global Energy Analysis</h6>
- <p class="small">Tableau viz exploring trends in global energy consumption.</p>
- <a href="https://public.tableau.com/app/profile/luca.bazzetto/viz/DataVizProject_17193278899480/Introduction" class="btn btn-sm btn-outline-success" target="_blank"><i class="fas fa-chart-bar"></i> View</a>
- </div>
- </div>
- </div>
- </div>
-
- <!-- Demoted Early Projects -->
- <h4 class="text-muted fs-5 mb-3"><i class="fas fa-history"></i> Early Academic Work</h4>
- <div class="row g-3">
- <!-- Movies (Demoted) -->
- <div class="col-md-6">
- <div class="card bg-light border-0 shadow-none">
- <div class="card-body py-2 px-3 d-flex justify-content-between align-items-center">
- <span><i class="fas fa-film text-muted me-2"></i> <span class="small fw-bold text-muted">Movie Data Scraper</span></span>
- <a href="https://github.com/lucabazzetto/FilmReviewsScraper" class="text-secondary" target="_blank"><i class="fab fa-github"></i></a>
- </div>
- </div>
- </div>
-
- <!-- Digit (Demoted) -->
- <div class="col-md-6">
- <div class="card bg-light border-0 shadow-none">
- <div class="card-body py-2 px-3 d-flex justify-content-between align-items-center">
- <span><i class="fas fa-image text-muted me-2"></i> <span class="small fw-bold text-muted">MNIST Digit Classification</span></span>
- <a href="https://github.com/lucabazzetto/Digit_Classification" class="text-secondary" target="_blank"><i class="fab fa-github"></i></a>
- </div>
- </div>
- </div>
- </div>
- </section>
-  
   <!-- Education -->
+  <section class="section container" id="education">
+    <h2 class="section-title">Education</h2>
+    <div>
+      <div class="role">
+        <div class="row-head">
+          <h3 class="role-title">MSc in Data Science</h3>
+          <span class="meta">2023 – expected Oct 2026</span>
+        </div>
+        <p class="meta">University of Milano-Bicocca, Milan</p>
+        <p>Thesis in collaboration with Electrolux Professional Group: a company-wide graph database for product relationship mapping.</p>
+      </div>
 
-  <section id='education' data-aos='fade-right'>
-  <h2 class="no-underline"><i class="fas fa-graduation-cap"></i> Education</h2>
+      <div class="role">
+        <div class="row-head">
+          <h3 class="role-title">Erasmus+ Exchange, Computer Science</h3>
+          <span class="meta">Oct 2024 – Jun 2025</span>
+        </div>
+        <p class="meta">Cracow University of Technology, Krakow</p>
+        <blockquote>
+          <p>"Mr. Bazzetto consistently distinguished himself as an exceptional student… Combining technical rigor with creativity, Luca is poised to excel in any data-driven environment."</p>
+          <footer>Barbara Borowik, PhD, Associate Professor · <a href="Luca_Bazzetto_Recommendation_Letter_L.pdf" target="_blank" rel="noopener" data-goatcounter-click="download-recommendation">Full letter (PDF)</a></footer>
+        </blockquote>
+      </div>
 
-  <div class="mb-4">
-    <h4 class="mb-1">MSc in Data Science</h4>
-    <h6 class="text-muted mb-2">
-      <i class="fas fa-university text-primary"></i> University of Milano-Bicocca, Italy &nbsp;|&nbsp; <i class="fas fa-calendar-alt"></i> 2023 - Present
-    </h6>
-    <!-- <ul>
-      <li><strong>Master's Thesis:</strong> Collaborating with Electrolux Professional Group to design a company-wide Graph Database for complex product relationship mapping.</li>
-      <li>Specialized in large-scale data architectures, Data Management, and Machine Learning.</li>
-    </ul> -->
-  </div>
+      <div class="role">
+        <div class="row-head">
+          <h3 class="role-title">BSc in Computer Science</h3>
+          <span class="meta">Graduated Oct 2022</span>
+        </div>
+        <p class="meta">University of Udine, Udine</p>
+        <p>Specialization in Internet of Things, Big Data and Web Technologies.</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="mb-4">
-    <h4 class="mb-1">Erasmus+ Exchange Program, Computer Science</h4>
-    <h6 class="text-muted mb-2">
-      <i class="fas fa-exchange-alt text-primary"></i> Cracow University of Technology, Poland &nbsp;|&nbsp; <i class="fas fa-calendar-alt"></i> Oct 2024 - Jun 2025
-    </h6>
-    <!-- <ul>
-      <li><strong>Academic Excellence:</strong> Awarded <strong>Grade A</strong> in Data Mining. Recognized by faculty for exceptional performance in machine learning frameworks.</li>
-      <li>Focused on Advanced Databases (Oracle DBMS, PL/SQL) and Deep Learning architectures.</li>
-    </ul> -->
-  </div>
-
-  <div>
-    <h4 class="mb-1">BSc in Computer Science</h4>
-    <h6 class="text-muted mb-2">
-      <i class="fas fa-university text-primary"></i> University of Udine, Italy &nbsp;|&nbsp; <i class="fas fa-calendar-alt"></i> Graduated 2022
-    </h6>
-    <ul>
-      <li>Specialization in Internet of Things, Big Data, and Web Technologies.</li>
-    </ul>
-  </div>
-</section>
-
-<!-- Recommendation -->
- <section id='recommendation' data-aos='fade-up' class="mb-5 mt-5">
- <div class="card border-0 bg-light shadow-none border-start border-4 border-secondary">
- <div class="card-body p-3">
- <div class="d-flex align-items-center">
- <i class="fas fa-quote-left fa-lg text-secondary me-3"></i>
- <div>
- <p class="fst-italic text-muted small mb-1">"Mr. Bazzetto consistently distinguished himself as an exceptional student... Combining technical rigor with creativity, Luca is poised to excel in any data-driven environment."</p>
- <span class="fw-bold small">Barbara Borowik, PhD</span> <span class="text-muted small">- Associate Professor, Cracow Univ. of Technology</span>
- <a href="Luca_Bazzetto_Recommendation_Letter_L.pdf" target="_blank" class="text-decoration-none small ms-2"><i class="fas fa-file-pdf"></i> PDF</a>
- </div>
- </div>
- </div>
- </div>
- </section>
-  <!-- Achievements -->
-  <section id='achievements' data-aos='fade-left'>
-    <h2 class="no-underline"><i class="fas fa-trophy"></i> Achievements & Rewards</h2>
-
-    <h5>KNIME Machine Learning Challenge</h5>
-    <p><i class="fas fa-medal"></i> Secured 2nd place at the competition held in Milan (May 2024).</p>
-    <p><a href="https://www.credly.com/badges/c7b5232e-773a-4ea3-9949-60ff622bb0f2" target="_blank" class="btn btn-primary">
-      <i class="fas fa-award"></i> View Badge
-    </a></p>
+  <!-- Beyond work -->
+  <section class="section container" id="beyond">
+    <h2 class="section-title">Beyond work</h2>
+    <div class="cards">
+      <div class="card">
+        <h4>Snowboarding</h4>
+        <p>When there's fresh snow, I'm in the mountains on my snowboard.</p>
+        <div class="card-links">
+          <button type="button" class="inline-link" data-video-open data-goatcounter-click="video-snowboard">Watch a run<svg class="icon icon-sm" aria-hidden="true"><use href="#i-play"/></svg></button>
+        </div>
+      </div>
+      <div class="card">
+        <h4>Homelab</h4>
+        <!-- TODO: list what actually runs on the Pi -->
+        <p>A Raspberry Pi home server where I self-host services in Docker containers, usually more over-engineered than they need to be.</p>
+      </div>
+      <div class="card">
+        <h4>Living abroad</h4>
+        <p>An Erasmus+ year studying Computer Science in Krakow, Poland.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" data-aos="fade-up">
-    <h2 class="no-underline"><i class="fas fa-envelope"></i> Contact Me</h2>
-    
-    <div class="row text-center">
-      <div class="col-md-4">
-        <i class="fas fa-envelope fa-2x mb-3"></i>
-        <h5>Email</h5>
-        <p><a href="mailto:luca.bazzetto@gmail.com">luca.bazzetto@gmail.com</a></p>
-      </div>
-      <div class="col-md-4">
-        <i class="fab fa-linkedin fa-2x mb-3"></i>
-        <h5>LinkedIn</h5>
-        <p><a href="https://linkedin.com/in/lucabazzetto">linkedin.com/in/lucabazzetto</a></p>
-      </div>
-      <div class="col-md-4">
-        <i class="fab fa-github fa-2x mb-3"></i>
-        <h5>GitHub</h5>
-        <p><a href="https://github.com/lucabazzetto">github.com/lucabazzetto</a></p>
+  <section class="section container" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div>
+      <p>The fastest way to reach me is email.</p>
+      <p><a class="contact-email" href="mailto:luca.bazzetto@gmail.com" data-goatcounter-click="email">luca.bazzetto@gmail.com</a></p>
+      <div class="actions">
+        <a class="btn" href="https://linkedin.com/in/lucabazzetto" target="_blank" rel="noopener" data-goatcounter-click="ext-linkedin">
+          <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn
+        </a>
+        <a class="btn" href="https://github.com/lucabazzetto" target="_blank" rel="noopener" data-goatcounter-click="ext-github">
+          <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>GitHub
+        </a>
+        <a class="btn" href="Luca_Bazzetto_Resume.pdf" target="_blank" rel="noopener" data-goatcounter-click="download-cv">
+          <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>CV
+        </a>
       </div>
     </div>
   </section>
 
-</div>
+</main>
 
-<!-- Footer -->
-<footer class='text-center py-4 text-white'>
+<footer class="site-footer">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p>© 2026 Luca Bazzetto | Portfolio</p>
-        <p><i class="fas fa-map-marker-alt"></i> Zagreb, Croatia</p>
-      </div>
-    </div>
+    <span>© 2026 Luca Bazzetto</span>
+    <a href="privacy.html">Privacy</a>
   </div>
 </footer>
 
-<!-- Bootstrap JS Bundle -->
-<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js'></script>
+<!-- Snowboard video, loaded only when opened -->
+<dialog class="video-dialog" id="snowboard-dialog" aria-label="Snowboarding video">
+  <form method="dialog"><button class="dialog-close" aria-label="Close video">×</button></form>
+  <video src="media/snowboard.mp4" controls playsinline muted loop preload="none"></video>
+</dialog>
 
-<!-- AOS (Animate on Scroll) JS -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js'></script>
+<script src="main.js"></script>
 
-<!-- Custom JS -->
-<script src='script.js'></script>
-
-<script>
-// Initialize AOS (Animate on Scroll)
-AOS.init();
-</script>
+<!-- Cookieless visitor statistics, see privacy.html -->
+<script data-goatcounter="https://lucabazzetto.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 
 </body>
 </html>
