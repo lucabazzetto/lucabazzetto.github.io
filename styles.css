@@ -437,6 +437,8 @@ h1 {
   white-space: nowrap;
 }
 
+.chip-row { display: flex; flex-wrap: wrap; gap: .4rem; }
+
 .status-chip, .award-chip {
   display: inline-flex;
   align-items: center;
