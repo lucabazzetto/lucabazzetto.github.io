@@ -289,6 +289,8 @@ h1 {
 }
 .hero-meta .icon { color: var(--g-red); }
 
+.cv-updated { margin-top: .9rem; color: var(--text-variant); font-size: .85rem; }
+
 .hero-art {
   position: relative;
   width: min(100%, 24rem);
