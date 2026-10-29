@@ -1,0 +1,4 @@
+# Files kept in the repo but not published on the site
+exclude:
+  - CLAUDE.md
+  - scripts/
