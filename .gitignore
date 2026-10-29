@@ -1,2 +1,9 @@
 .DS_Store
 media/*-original.*
+
+# Original photos and videos: only the optimized copies in media/ are published
+IMG-*.jpg
+VID-*.mp4
+
+# Notes for Claude and personal files stay local (the repo is public)
+CLAUDE.md

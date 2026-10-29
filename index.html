@@ -125,10 +125,10 @@
 
   <!-- Highlights -->
   <section class="stats container" aria-label="Highlights">
-    <div class="stat tone-blue"><strong>50k</strong><span>products modeled in a similarity graph I designed</span></div>
-    <div class="stat tone-green"><strong>5</strong><span>business functions: Finance, Supply Chain, Manufacturing, HR, Operations</span></div>
+    <div class="stat tone-blue"><strong>60k+</strong><span>products in a similarity graph that saves sales users ~2 hours a day</span></div>
+    <div class="stat tone-green"><strong>7</strong><span>source databases feeding the data warehouse I maintain</span></div>
     <div class="stat tone-yellow"><strong>2nd</strong><span>place at the KNIME Machine Learning Challenge</span></div>
-    <div class="stat tone-red"><strong>500</strong><span>users of the reports I migrated to Oracle APEX</span></div>
+    <div class="stat tone-red"><strong>4</strong><span>data initiatives I led end to end, two in daily production use</span></div>
   </section>
 
   <!-- About -->
@@ -138,10 +138,10 @@
       <h2>About me</h2>
     </div>
     <div class="prose">
-      <p>I'm a Data Engineer at Electrolux Professional Group, where I started as an intern in 2025. I integrate data from many business systems into one governed analytics platform, and build the data products on top of it that Finance, Supply Chain, Manufacturing, HR and Operations use.</p>
+      <p>I'm a Data Engineer at Electrolux Professional Group, where I joined as an intern in 2025 and was hired as a Data Engineer in February 2026. I integrate data from many business systems into one governed analytics platform, and build the data products on top of it that Finance, Supply Chain, Manufacturing, HR and Operations use.</p>
       <p>The part I enjoy most is where data engineering meets graphs and AI: modeling products and their relationships as property graphs, and preparing the datasets behind semantic search and AI initiatives. I studied Computer Science in Udine, spent an Erasmus year in Krakow, and earned an MSc in Data Science in Milan, graduating 110/110 cum laude.</p>
       <p>Off-screen, you can usually find me
-        <button type="button" class="inline-link" data-video-open data-goatcounter-click="video-snowboard">carving fresh tracks on my snowboard<svg class="icon icon-sm" aria-hidden="true"><use href="#i-play"/></svg></button>
+        <button type="button" class="inline-link" data-video-open="snowboard-dialog" data-goatcounter-click="video-snowboard">carving fresh tracks on my snowboard<svg class="icon icon-sm" aria-hidden="true"><use href="#i-play"/></svg></button>
         or over-engineering Docker containers on my <a href="#beyond">self-hosted Raspberry Pi home servers</a>.</p>
     </div>
   </section>
@@ -170,10 +170,13 @@
               </span>
             </div>
             <ul class="bullets">
-              <li>Build enterprise data products and analytical solutions used across Finance, Supply Chain, Manufacturing, HR and Operations, integrating data from multiple business systems into a governed analytics platform.</li>
-              <li>Develop self-service reporting and operational analytics, reducing reliance on manual extraction and spreadsheet-based workflows.</li>
-              <li>Design graph-based data models for relationship-driven product analysis, traceability and exploration of manufacturing data.</li>
-              <li>Partner with business stakeholders and AI teams to turn operational requirements into data products, analytical services and AI-ready datasets for reporting, automation and semantic search.</li>
+              <li>Co-designed and built a product-similarity service on Oracle SQL/PGQ graphs and text embeddings over 60k+ products, in production for B2B sales: users report saving about 2 hours a day.</li>
+              <li>Extended it from Laundry to Food Service and added live warehouse stock to the graph, so sales see alternatives that can ship now.</li>
+              <li>Built a Bill of Materials property graph integrating 4 source systems (2 ERPs, 2 in-house), now queried daily by the call-center AI bot, whose text-to-SQL it overhauled.</li>
+              <li>Automated a JD Edwards finance reconciliation: an APEX app triggers OCI Data Integration jobs on demand for just the data the user filters, saving controllers days of manual work.</li>
+              <li>Own operational reporting in Oracle APEX: gather business requests, specify the reports, assign the build to a teammate and review before release (20+ reports, with email subscriptions).</li>
+              <li>Maintain the ODI pipelines and GoldenGate replication that load 7 source databases (JD Edwards, Oracle EBS, SQL Server, IBM DB2) into the Oracle data warehouse.</li>
+              <li>Built the KPI model and Power BI dashboard on adoption, ROI and running cost of internal AI tools.</li>
             </ul>
           </div>
 
@@ -183,10 +186,9 @@
               <span class="date-chip">Sep 2025 – Feb 2026</span>
             </div>
             <ul class="bullets">
-              <li>Drove the migration of operational reports from legacy tools to Oracle APEX across supply chain, logistics, manufacturing, finance and operations.</li>
-              <li>Implemented company-level authorization logic so users only access data for their own business entity.</li>
-              <li>Built Oracle Data Integrator (ODI) mappings, Load Plans and scheduled batch processes for enterprise data migration and replication.</li>
-              <li>Developed data monitoring, AI analytics and automation components with Oracle GoldenGate, Qlik Sense, Power BI, SQL, Python, Microsoft Graph API and OCI.</li>
+              <li>Migrated all ~22 legacy reports still in use to Oracle APEX for ~200 users across supply chain, logistics, manufacturing and finance, with company-level access control.</li>
+              <li>Built Oracle Data Integrator (ODI) mappings, Load Plans and nightly batch jobs, and added alerts on GoldenGate replication failures.</li>
+              <li>Built a Python agent on the Microsoft Graph API that turns free-text emails into structured product-coding requests, matched against 6,500+ suppliers.</li>
             </ul>
           </div>
 
@@ -194,21 +196,21 @@
           <div class="mini-grid">
             <div class="mini">
               <span class="icon-chip icon-chip-sm tone-blue"><svg class="icon" aria-hidden="true"><use href="#i-graph"/></svg></span>
-              <h5>Product similarity graph</h5>
-              <p>A property graph over a catalog of 50k products that scores similarity and surfaces relevant alternatives, so a missing product doesn't mean a lost customer.</p>
-              <ul class="chips"><li>Oracle Property Graph</li><li>SQL/PGQ</li></ul>
+              <h5>Product similarity service</h5>
+              <p>A property graph over 60k+ products, combined with text embeddings and live warehouse stock, that suggests alternatives in seconds, so a missing product doesn't mean a lost customer. Sales users say it saves them about 2 hours a day.</p>
+              <ul class="chips"><li>SQL/PGQ</li><li>Embeddings</li><li>Oracle Database</li></ul>
             </div>
             <div class="mini">
-              <span class="icon-chip icon-chip-sm tone-green"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg></span>
-              <h5>Reporting modernization</h5>
-              <p>Moved around 30 operational reports from legacy tools to Oracle APEX for about 500 users, with reporting governance and secure, company-level authorization.</p>
-              <ul class="chips"><li>Oracle APEX</li><li>Oracle Database</li><li>PL/SQL</li></ul>
+              <span class="icon-chip icon-chip-sm tone-green"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></span>
+              <h5>Bill of Materials graph</h5>
+              <p>Product structures from 4 source systems in one property graph, cleaned and queried every day by the call-center AI bot to answer questions about components and spare parts.</p>
+              <ul class="chips"><li>Property graph</li><li>Data modeling</li><li>Text-to-SQL</li></ul>
             </div>
             <div class="mini">
-              <span class="icon-chip icon-chip-sm tone-yellow"><svg class="icon" aria-hidden="true"><use href="#i-cpu"/></svg></span>
-              <h5>AI usage analytics</h5>
-              <p>SQL datasets, KPI model and Power BI reporting that give the company visibility into how enterprise AI tools are adopted.</p>
-              <ul class="chips"><li>Power BI</li><li>SQL</li></ul>
+              <span class="icon-chip icon-chip-sm tone-yellow"><svg class="icon" aria-hidden="true"><use href="#i-database"/></svg></span>
+              <h5>On-demand finance reconciliation</h5>
+              <p>An APEX app where controllers pick filters and trigger OCI Data Integration jobs that load only the JD Edwards data they need, saving days of manual work.</p>
+              <ul class="chips"><li>Oracle APEX</li><li>OCI Data Integration</li><li>JD Edwards</li></ul>
             </div>
           </div>
         </article>
@@ -310,7 +312,7 @@
     <div class="skill-grid">
       <div class="card">
         <div class="skill-head"><span class="icon-chip icon-chip-sm tone-blue"><svg class="icon" aria-hidden="true"><use href="#i-database"/></svg></span><h3>Data engineering</h3></div>
-        <ul class="chips"><li>Oracle Database</li><li>ODI</li><li>GoldenGate</li><li>OCI</li><li>SQL Server</li><li>IBM DB2</li><li>ETL/ELT</li><li>Data warehousing</li><li>Data modeling</li><li>Data governance</li></ul>
+        <ul class="chips"><li>Oracle Database</li><li>ODI</li><li>GoldenGate (CDC)</li><li>OCI</li><li>SQL Server</li><li>IBM DB2</li><li>ETL/ELT</li><li>Data warehousing</li><li>Data modeling</li><li>Data governance</li></ul>
       </div>
       <div class="card">
         <div class="skill-head"><span class="icon-chip icon-chip-sm tone-red"><svg class="icon" aria-hidden="true"><use href="#i-terminal"/></svg></span><h3>Languages &amp; query</h3></div>
@@ -346,6 +348,16 @@
           </div>
           <p class="meta">University of Milano-Bicocca, Milan · 110/110 cum laude</p>
           <p>Thesis in collaboration with Electrolux Professional Group: <em>A Property-Graph Recommender System for Industrial Product Substitution</em>.</p>
+          <div class="grad-media">
+            <figure class="photo">
+              <img src="media/graduation.jpg" alt="Luca wearing a laurel wreath and holding his MSc thesis outside the University of Milano-Bicocca" width="640" height="800" loading="lazy">
+              <figcaption>Laurel wreath included. <button type="button" class="inline-link" data-video-open="graduation-dialog" data-goatcounter-click="video-graduation">Watch the proclamation<svg class="icon icon-sm" aria-hidden="true"><use href="#i-play"/></svg></button></figcaption>
+            </figure>
+            <figure class="photo">
+              <img src="media/thesis-mcdonalds.jpg" alt="Luca at his laptop in a McDonald's" width="640" height="800" loading="lazy">
+              <figcaption>Where the final thesis was submitted: a McDonald's 🍟</figcaption>
+            </figure>
+          </div>
         </div>
       </li>
       <li class="timeline-item">
@@ -382,7 +394,7 @@
     </div>
     <div class="beyond-grid">
       <article class="card">
-        <button type="button" class="video-thumb" data-video-open data-goatcounter-click="video-snowboard" aria-label="Play snowboarding video">
+        <button type="button" class="video-thumb" data-video-open="snowboard-dialog" data-goatcounter-click="video-snowboard" aria-label="Play snowboarding video">
           <img src="media/snowboard-poster.jpg" alt="" loading="lazy">
           <span class="play-button"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></span>
         </button>
@@ -451,6 +463,12 @@
 <dialog class="video-dialog" id="snowboard-dialog" aria-label="Snowboarding video">
   <form method="dialog"><button class="dialog-close" aria-label="Close video">×</button></form>
   <video src="media/snowboard.mp4" poster="media/snowboard-poster.jpg" controls playsinline muted loop preload="none"></video>
+</dialog>
+
+<!-- Graduation video, loaded only when opened -->
+<dialog class="video-dialog" id="graduation-dialog" aria-label="Graduation proclamation video">
+  <form method="dialog"><button class="dialog-close" aria-label="Close video">×</button></form>
+  <video src="media/graduation.mp4" poster="media/graduation-poster.jpg" controls playsinline preload="none"></video>
 </dialog>
 
 <script src="main.js"></script>

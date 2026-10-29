@@ -685,3 +685,15 @@ h1 {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* Graduation photos in the Education card */
+.grad-media {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .75rem;
+  max-width: 30rem;
+  margin-top: 1rem;
+}
+.photo { margin: 0; }
+.photo img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius); }
+.photo figcaption { margin-top: .45rem; color: var(--text-variant); font-size: .88rem; }
