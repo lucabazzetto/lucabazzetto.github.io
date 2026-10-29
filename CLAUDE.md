@@ -59,7 +59,11 @@ the PDF, copies the CV and the recommendation letter here, updates the
 **Keep the site and the CV consistent.** When a change touches facts that appear in
 both (role, dates, location, work mode, figures, projects, skills, education),
 update both, then run the script. Current facts: based in Zagreb, Croatia; Data
-Engineer at Electrolux Professional Group, hybrid (Pordenone, IT).
+Engineer at Electrolux Professional Group, hybrid (Pordenone, IT); MSc in Data
+Science at Milano-Bicocca, graduated October 2026 with 110/110 cum laude. Thesis:
+*A Property-Graph Recommender System for Industrial Product Substitution*, with
+Electrolux. Thesis details live in `/Users/luca/MyDrive/Magistrale/Thesis` (read
+its CLAUDE.md: the data there is confidential).
 
 ## Working here
 
