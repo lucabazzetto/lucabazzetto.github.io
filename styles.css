@@ -289,7 +289,6 @@ h1 {
 }
 .hero-meta .icon { color: var(--g-red); }
 
-.cv-updated { margin-top: .9rem; color: var(--text-variant); font-size: .85rem; }
 
 .hero-art {
   position: relative;
@@ -654,7 +653,8 @@ h1 {
   background: #000;
   overflow: visible;
 }
-.video-dialog::backdrop { background: rgb(0 0 0 / .8); }
+.video-dialog::backdrop,
+.photo-dialog::backdrop { background: rgb(0 0 0 / .8); }
 .video-dialog video { width: 100%; aspect-ratio: 9 / 16; border-radius: var(--radius-lg); }
 
 .dialog-close {
@@ -686,14 +686,19 @@ h1 {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
 
-/* Graduation photos in the Education card */
-.grad-media {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: .75rem;
-  max-width: 30rem;
-  margin-top: 1rem;
+/* Graduation photo in the Education card */
+.grad-media { display: flex; align-items: flex-end; gap: 1.1rem; margin-top: 1rem; }
+.grad-media img { width: min(14rem, 45%); height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius); }
+.grad-notes p { margin-top: .5rem; color: var(--text-variant); font-size: .93rem; }
+
+/* Photo dialog */
+.photo-dialog {
+  width: min(90vw, calc(85vh * 4 / 5));
+  max-width: none;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-lg);
+  background: #000;
+  overflow: visible;
 }
-.photo { margin: 0; }
-.photo img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius); }
-.photo figcaption { margin-top: .45rem; color: var(--text-variant); font-size: .88rem; }
+.photo-dialog img { width: 100%; height: auto; border-radius: var(--radius-lg); }

@@ -1,21 +1,20 @@
-// Video dialogs: each button opens the dialog named in data-video-open,
-// and the video only loads when its dialog opens
-document.querySelectorAll('[data-video-open]').forEach(button => {
-  const dialog = document.getElementById(button.dataset.videoOpen);
+// Dialogs (videos and photos): each button opens the dialog named in
+// data-dialog-open; a video only loads when its dialog opens
+document.querySelectorAll('[data-dialog-open]').forEach(button => {
+  const dialog = document.getElementById(button.dataset.dialogOpen);
   if (!dialog) return;
   button.addEventListener('click', () => {
     dialog.showModal();
-    dialog.querySelector('video').play().catch(() => {});
+    dialog.querySelector('video')?.play().catch(() => {});
   });
 });
 
-document.querySelectorAll('.video-dialog').forEach(dialog => {
-  const video = dialog.querySelector('video');
-  // Close when clicking the backdrop, pause when closed
+document.querySelectorAll('.video-dialog, .photo-dialog').forEach(dialog => {
+  // Close when clicking the backdrop, pause any video when closed
   dialog.addEventListener('click', event => {
     if (event.target === dialog) dialog.close();
   });
-  dialog.addEventListener('close', () => video.pause());
+  dialog.addEventListener('close', () => dialog.querySelector('video')?.pause());
 });
 
 // Highlight the nav link of the section currently in view
