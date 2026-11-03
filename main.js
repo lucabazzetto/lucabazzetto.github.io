@@ -4,8 +4,11 @@ document.querySelectorAll('[data-dialog-open]').forEach(button => {
   const dialog = document.getElementById(button.dataset.dialogOpen);
   if (!dialog) return;
   button.addEventListener('click', () => {
+    const video = dialog.querySelector('video');
+    // The poster is set here too, so it isn't downloaded with the page
+    if (video && !video.poster && video.dataset.poster) video.poster = video.dataset.poster;
     dialog.showModal();
-    dialog.querySelector('video')?.play().catch(() => {});
+    video?.play().catch(() => {});
   });
 });
 

@@ -458,7 +458,7 @@
 <!-- Snowboard video, loaded only when opened -->
 <dialog class="video-dialog" id="snowboard-dialog" aria-label="Snowboarding video">
   <form method="dialog"><button class="dialog-close" aria-label="Close video">×</button></form>
-  <video src="media/snowboard.mp4" poster="media/snowboard-poster.jpg" controls playsinline muted loop preload="none"></video>
+  <video src="media/snowboard.mp4" data-poster="media/snowboard-poster.jpg" controls playsinline muted loop preload="none"></video>
 </dialog>
 
 <!-- Photo of where the thesis was submitted -->
@@ -470,7 +470,9 @@
 <!-- Graduation video, loaded only when opened -->
 <dialog class="video-dialog" id="graduation-dialog" aria-label="Graduation proclamation video">
   <form method="dialog"><button class="dialog-close" aria-label="Close video">×</button></form>
-  <video src="media/graduation.mp4" poster="media/graduation-poster.jpg" controls playsinline preload="none"></video>
+  <video src="media/graduation.mp4" data-poster="media/graduation-poster.jpg" controls playsinline preload="none">
+    <track kind="captions" src="media/graduation.en.vtt" srclang="en" label="English" default>
+  </video>
 </dialog>
 
 <script src="main.js"></script>

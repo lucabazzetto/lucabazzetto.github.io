@@ -7,3 +7,9 @@ VID-*.mp4
 
 # Notes for Claude and personal files stay local (the repo is public)
 CLAUDE.md
+
+# Impeccable design notes stay local too
+PRODUCT.md
+DESIGN.md
+DESIGN.*.json
+.impeccable/
