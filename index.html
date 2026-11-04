@@ -81,11 +81,10 @@
     </a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
       <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#education">Education</a></li>
-      <li><a href="#beyond">Beyond work</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -96,7 +95,6 @@
   <!-- Hero -->
   <section class="hero container" id="top">
     <div class="hero-text">
-      <p class="hello-chip">👋 Hi, I'm Luca</p>
       <h1>Luca Bazzetto</h1>
       <p class="hero-role">Data Engineer at <strong>Electrolux Professional Group</strong></p>
       <p class="hero-lead">I turn ERP data into graph models, pipelines and reports that sales, finance and support teams use every day.</p>
@@ -125,33 +123,130 @@
     </div>
   </section>
 
-  <!-- Highlights -->
+  <!-- Highlights: each tile links to the section that proves it -->
   <section class="stats container" aria-label="Highlights">
-    <div class="stat tone-blue"><strong>60k+</strong><span>products in a similarity graph that saves sales users ~2 hours a day</span></div>
-    <div class="stat tone-green"><strong>7</strong><span>source databases feeding the data warehouse I maintain</span></div>
-    <div class="stat tone-yellow"><strong>2nd</strong><span>place at the KNIME Machine Learning Challenge</span></div>
-    <div class="stat tone-red"><strong>4</strong><span>data initiatives I led end to end, all in production</span></div>
+    <a class="stat tone-blue" href="#work"><strong>60k+</strong><span>products in a similarity service used by sales</span></a>
+    <a class="stat tone-green" href="#work"><strong>4</strong><span>data initiatives I led end to end, all in production</span></a>
+    <a class="stat tone-yellow" href="#experience"><strong>7</strong><span>source databases feeding the warehouse I maintain</span></a>
+    <a class="stat tone-red" href="#education"><strong>110/110</strong><span>cum laude, MSc in Data Science</span></a>
   </section>
 
   <!-- About -->
   <section class="section container" id="about">
     <div class="section-head">
-      <span class="icon-chip tone-blue"><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg></span>
       <h2>About me</h2>
     </div>
     <div class="prose">
-      <p>I'm a Data Engineer at Electrolux Professional Group, where I joined as an intern in 2025 and was hired as a Data Engineer in February 2026. I integrate data from many business systems into one governed analytics platform, and build the data products on top of it that Finance, Supply Chain, Manufacturing, HR and Operations use.</p>
-      <p>The part I enjoy most is where data engineering meets graphs and AI: modeling products and their relationships as property graphs, and preparing the datasets behind semantic search and AI initiatives. I studied Computer Science in Udine, spent an Erasmus year in Krakow, and earned an MSc in Data Science in Milan, graduating 110/110 cum laude.</p>
-      <p>Off-screen, you can usually find me
+      <p>I joined Electrolux Professional Group as an intern in 2025 and was hired as a Data Engineer in February 2026. I integrate data from many business systems into one governed analytics platform, and build the data products on top of it that Finance, Supply Chain, Manufacturing, HR and Operations use.</p>
+      <p>The part I enjoy most is where data engineering meets graphs and AI. Off-screen, you can usually find me
         <button type="button" class="inline-link" data-dialog-open="snowboard-dialog" data-goatcounter-click="video-snowboard">carving fresh tracks on my snowboard<svg class="icon icon-sm" aria-hidden="true"><use href="#i-play"/></svg></button>
         or over-engineering Docker containers on my <a href="#beyond">self-hosted Raspberry Pi home servers</a>.</p>
+      <p class="languages"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>Italian (native) · English (professional) · Spanish (basic)</p>
     </div>
+  </section>
+
+  <!-- Work in production -->
+  <section class="section container" id="work">
+    <div class="section-head">
+      <h2>Work in production</h2>
+    </div>
+
+    <div class="work-grid">
+      <article class="card work-main">
+        <div class="card-top">
+          <div class="title-row">
+            <span class="icon-chip tone-blue"><svg class="icon" aria-hidden="true"><use href="#i-graph"/></svg></span>
+            <h3>Product similarity service</h3>
+          </div>
+          <span class="status-chip"><span class="live-dot" aria-hidden="true"></span>In production</span>
+        </div>
+        <p>A property graph over 60k+ products, combined with text embeddings and live warehouse stock, that suggests alternatives in seconds, so a missing product doesn't mean a lost customer. Laundry and Food Service sales teams use it, and report saving about 2 hours a day.</p>
+        <p>I co-designed it with a colleague, and it became my <a href="#education">MSc thesis</a>.</p>
+        <ul class="chips"><li>SQL/PGQ</li><li>Embeddings</li><li>Oracle Database</li></ul>
+      </article>
+
+      <article class="card work-item">
+        <div class="title-row">
+          <span class="icon-chip icon-chip-sm tone-green"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></span>
+          <h3>Bill of Materials graph</h3>
+        </div>
+        <p>Product structures from 4 source systems in one property graph, cleaned and queried every day by the call-center AI bot to answer questions about components and spare parts.</p>
+        <ul class="chips"><li>Property graph</li><li>Data modeling</li><li>Text-to-SQL</li></ul>
+      </article>
+
+      <article class="card work-item">
+        <div class="title-row">
+          <span class="icon-chip icon-chip-sm tone-yellow"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg></span>
+          <h3>Reporting in Oracle APEX</h3>
+        </div>
+        <p>I migrated the ~22 legacy reports still in use for about 200 users, and now own every new request, 20+ reports so far. One is an on-demand finance reconciliation that triggers OCI Data Integration jobs for just the data a controller filters, saving days of manual work.</p>
+        <ul class="chips"><li>Oracle APEX</li><li>OCI Data Integration</li><li>PL/SQL</li></ul>
+      </article>
+    </div>
+
+    <h3 class="subhead">Side projects</h3>
+    <div class="side-grid">
+      <article class="side">
+        <div class="side-head">
+          <h4>Tech Keynotes Calendar</h4>
+          <span class="status-chip"><span class="live-dot" aria-hidden="true"></span>Live</span>
+        </div>
+        <p>A Python pipeline that curates the tier-1 tech and data engineering keynotes into a calendar you can subscribe to, with exact broadcast times and livestream links.</p>
+        <div class="card-actions">
+          <a class="text-btn" href="https://lucabazzetto.github.io/tech-keynotes-calendar/" target="_blank" rel="noopener" data-goatcounter-click="ext-keynotes-calendar">Open calendar<svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="text-btn" href="https://github.com/lucabazzetto/tech-keynotes-calendar" target="_blank" rel="noopener">Repository<svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+
+      <article class="side">
+        <div class="side-head">
+          <h4>Smoker detection</h4>
+          <span class="award-chip">🥈 2nd place · Milan 2024</span>
+        </div>
+        <p>Predictive pipeline for the KNIME Machine Learning Challenge that classifies smoking status from health features, handling class imbalance.</p>
+        <div class="card-actions">
+          <a class="text-btn" href="https://hub.knime.com/s/XeMx8WAPletD3k9t" target="_blank" rel="noopener">Workflow<svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="text-btn" href="https://www.credly.com/badges/c7b5232e-773a-4ea3-9949-60ff622bb0f2" target="_blank" rel="noopener">Badge<svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+
+      <article class="side">
+        <div class="side-head">
+          <h4>Scientific text classification</h4>
+        </div>
+        <p>CNN and LSTM models in TensorFlow that classify arXiv articles, with K-fold cross-validation and automated preprocessing.</p>
+        <div class="card-actions">
+          <a class="text-btn" href="https://github.com/lucabazzetto/arXiv_text_classification" target="_blank" rel="noopener">Repository<svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+
+      <article class="side">
+        <div class="side-head">
+          <h4>Global energy analysis</h4>
+        </div>
+        <p>Interactive Tableau visualization of trends in global energy consumption.</p>
+        <div class="card-actions">
+          <a class="text-btn" href="https://public.tableau.com/app/profile/luca.bazzetto/viz/DataVizProject_17193278899480/Introduction" target="_blank" rel="noopener">Visualization<svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+    </div>
+
+    <p class="more">More on GitHub: <a href="https://github.com/lucabazzetto/FilmReviewsScraper" target="_blank" rel="noopener">film reviews scraper</a> · <a href="https://github.com/lucabazzetto?tab=repositories" target="_blank" rel="noopener">all repositories</a></p>
+  </section>
+
+  <!-- Recommendation -->
+  <section class="container quote-band" aria-label="Recommendation">
+    <figure class="pull-quote">
+      <blockquote>
+        <p>“Mr. Bazzetto consistently distinguished himself as an exceptional student… Combining technical rigor with creativity, Luca is poised to excel in any data-driven environment.”</p>
+      </blockquote>
+      <figcaption>Barbara Borowik, PhD, Associate Professor, Cracow University of Technology · <a href="Luca_Bazzetto_Recommendation_Letter_L.pdf" target="_blank" rel="noopener" data-goatcounter-click="download-recommendation">Full letter (PDF)</a></figcaption>
+    </figure>
   </section>
 
   <!-- Experience -->
   <section class="section container" id="experience">
     <div class="section-head">
-      <span class="icon-chip tone-red"><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg></span>
       <h2>Experience</h2>
     </div>
 
@@ -172,9 +267,9 @@
               </span>
             </div>
             <ul class="bullets">
-              <li>Co-designed a product-similarity service on graphs and embeddings, in production for B2B sales: users report saving about 2 hours a day.</li>
+              <li>Co-designed a product-similarity service on graphs and embeddings, in production for B2B sales.</li>
               <li>Built the Bill of Materials graph that the call-center AI bot queries every day.</li>
-              <li>Own reporting in Oracle APEX (20+ reports), including an on-demand finance reconciliation that saves controllers days of work.</li>
+              <li>Own reporting in Oracle APEX, from user requests and specs to reviewing what a teammate builds.</li>
               <li>Maintain the ODI and GoldenGate pipelines from 7 source databases into the data warehouse, and am introducing Apache Airflow.</li>
             </ul>
           </div>
@@ -189,28 +284,6 @@
               <li>Built a Python agent with Azure OpenAI and the Microsoft Graph API that turns free-text emails into structured product-coding requests, matched against 6,500+ suppliers.</li>
               <li>Migrated all ~22 legacy reports still in use to Oracle APEX for ~200 users across supply chain, logistics, manufacturing and finance, with company-level access control.</li>
             </ul>
-          </div>
-
-          <h4 class="subhead">Selected work</h4>
-          <div class="mini-grid">
-            <div class="mini">
-              <span class="icon-chip icon-chip-sm tone-blue"><svg class="icon" aria-hidden="true"><use href="#i-graph"/></svg></span>
-              <h5>Product similarity service</h5>
-              <p>A property graph over 60k+ products, combined with text embeddings and live warehouse stock, that suggests alternatives in seconds, so a missing product doesn't mean a lost customer. Sales users say it saves them about 2 hours a day.</p>
-              <ul class="chips"><li>SQL/PGQ</li><li>Embeddings</li><li>Oracle Database</li></ul>
-            </div>
-            <div class="mini">
-              <span class="icon-chip icon-chip-sm tone-green"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></span>
-              <h5>Bill of Materials graph</h5>
-              <p>Product structures from 4 source systems in one property graph, cleaned and queried every day by the call-center AI bot to answer questions about components and spare parts.</p>
-              <ul class="chips"><li>Property graph</li><li>Data modeling</li><li>Text-to-SQL</li></ul>
-            </div>
-            <div class="mini">
-              <span class="icon-chip icon-chip-sm tone-yellow"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg></span>
-              <h5>Reporting in Oracle APEX</h5>
-              <p>I migrated the ~22 legacy reports still in use for about 200 users, and now own all new requests: 20+ reports so far. One is an on-demand finance reconciliation that triggers OCI Data Integration jobs for just the data a controller filters, saving days of manual work.</p>
-              <ul class="chips"><li>Oracle APEX</li><li>OCI Data Integration</li><li>PL/SQL</li></ul>
-            </div>
           </div>
         </article>
       </li>
@@ -236,98 +309,27 @@
     </ol>
   </section>
 
-  <!-- Projects -->
-  <section class="section container" id="projects">
-    <div class="section-head">
-      <span class="icon-chip tone-yellow"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></span>
-      <h2>Projects</h2>
-    </div>
-
-    <div class="project-grid">
-      <article class="card card-featured">
-        <div class="featured-body">
-          <div class="card-top">
-            <span class="icon-chip tone-green"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></span>
-            <span class="status-chip"><span class="live-dot" aria-hidden="true"></span>Live</span>
-          </div>
-          <h3>Tech Keynotes Calendar</h3>
-          <p>A Python pipeline that curates only the tier-1 tech and data engineering keynotes (WWDC, Google I/O, AWS re:Invent, Databricks Data + AI Summit, Snowflake Summit, NVIDIA GTC…) into a calendar you can subscribe to. Exact broadcast times instead of all-day blocks, livestream links and reminders, published as an ICS feed, JSON export and web dashboard.</p>
-          <ul class="chips"><li>Python</li><li>iCalendar (ICS)</li><li>GitHub Pages</li></ul>
-          <div class="card-actions">
-            <a class="btn btn-tonal btn-sm" href="https://lucabazzetto.github.io/tech-keynotes-calendar/" target="_blank" rel="noopener" data-goatcounter-click="ext-keynotes-calendar">Open calendar<svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-            <a class="text-btn" href="https://github.com/lucabazzetto/tech-keynotes-calendar" target="_blank" rel="noopener">Repository<svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-top">
-          <span class="icon-chip tone-yellow"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg></span>
-          <span class="award-chip">🥈 2nd place · Milan 2024</span>
-        </div>
-        <h3>Smoker detection</h3>
-        <p>Predictive pipeline for the KNIME Machine Learning Challenge that classifies smoking status from health features, handling class imbalance and automating deployment.</p>
-        <ul class="chips"><li>KNIME Analytics Platform</li></ul>
-        <div class="card-actions">
-          <a class="text-btn" href="https://hub.knime.com/s/XeMx8WAPletD3k9t" target="_blank" rel="noopener">Workflow<svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          <a class="text-btn" href="https://www.credly.com/badges/c7b5232e-773a-4ea3-9949-60ff622bb0f2" target="_blank" rel="noopener">Badge<svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-top">
-          <span class="icon-chip tone-blue"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></span>
-        </div>
-        <h3>Scientific text classification</h3>
-        <p>Deep learning pipeline with CNN and LSTM architectures that classifies arXiv articles, with K-fold cross-validation and automated preprocessing.</p>
-        <ul class="chips"><li>Python</li><li>TensorFlow</li></ul>
-        <div class="card-actions">
-          <a class="text-btn" href="https://github.com/lucabazzetto/arXiv_text_classification" target="_blank" rel="noopener">Repository<svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-top">
-          <span class="icon-chip tone-red"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></span>
-        </div>
-        <h3>Global energy analysis</h3>
-        <p>Interactive visualization exploring trends in global energy consumption.</p>
-        <ul class="chips"><li>Tableau</li></ul>
-        <div class="card-actions">
-          <a class="text-btn" href="https://public.tableau.com/app/profile/luca.bazzetto/viz/DataVizProject_17193278899480/Introduction" target="_blank" rel="noopener">Visualization<svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        </div>
-      </article>
-    </div>
-
-    <p class="more">More on GitHub: <a href="https://github.com/lucabazzetto/FilmReviewsScraper" target="_blank" rel="noopener">film reviews scraper</a> · <a href="https://github.com/lucabazzetto?tab=repositories" target="_blank" rel="noopener">all repositories</a></p>
-  </section>
-
   <!-- Skills -->
   <section class="section container" id="skills">
     <div class="section-head">
-      <span class="icon-chip tone-green"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span>
       <h2>Skills</h2>
     </div>
-    <div class="skill-grid">
-      <div class="card">
-        <div class="skill-head"><span class="icon-chip icon-chip-sm tone-blue"><svg class="icon" aria-hidden="true"><use href="#i-database"/></svg></span><h3>Data engineering</h3></div>
-        <ul class="chips"><li>Oracle Database</li><li>ODI</li><li>GoldenGate (CDC)</li><li>Apache Airflow</li><li>OCI</li><li>SQL Server</li><li>IBM DB2</li><li>ETL/ELT</li><li>Data warehousing</li><li>Data modeling</li><li>Data governance</li></ul>
+    <div class="core-stack">
+      <h3>Core stack</h3>
+      <ul class="chips chips-core"><li>SQL &amp; PL/SQL</li><li>Oracle Database</li><li>Oracle Data Integrator</li><li>GoldenGate (CDC)</li><li>SQL/PGQ</li><li>Python</li><li>Oracle APEX</li><li>Apache Airflow</li></ul>
+    </div>
+    <div class="skill-groups">
+      <div class="skill-group">
+        <h3>Data engineering</h3>
+        <ul class="chips"><li>OCI</li><li>SQL Server</li><li>IBM DB2</li><li>ETL/ELT</li><li>Data warehousing</li><li>Data modeling</li><li>Data governance</li><li>Git</li></ul>
       </div>
-      <div class="card">
-        <div class="skill-head"><span class="icon-chip icon-chip-sm tone-red"><svg class="icon" aria-hidden="true"><use href="#i-terminal"/></svg></span><h3>Languages &amp; query</h3></div>
-        <ul class="chips"><li>SQL</li><li>PL/SQL</li><li>SQL/PGQ</li><li>Python</li><li>R</li><li>Git</li></ul>
+      <div class="skill-group">
+        <h3>Graph &amp; AI</h3>
+        <ul class="chips"><li>Property graphs</li><li>Vector embeddings</li><li>Semantic search</li><li>LLMs (Azure OpenAI)</li><li>Prompt engineering</li><li>AI agents</li><li>Microsoft Graph API</li><li>Copilot Studio</li></ul>
       </div>
-      <div class="card">
-        <div class="skill-head"><span class="icon-chip icon-chip-sm tone-yellow"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg></span><h3>Analytics &amp; BI</h3></div>
-        <ul class="chips"><li>Oracle APEX</li><li>Power BI</li><li>Qlik Sense</li><li>Qlik Cloud</li><li>Tableau</li><li>KNIME</li><li>KPI modeling</li><li>Reporting automation</li></ul>
-      </div>
-      <div class="card">
-        <div class="skill-head"><span class="icon-chip icon-chip-sm tone-green"><svg class="icon" aria-hidden="true"><use href="#i-graph"/></svg></span><h3>Graph &amp; AI</h3></div>
-        <ul class="chips"><li>Property graphs</li><li>Vector embeddings</li><li>Semantic search</li><li>AI agents</li><li>Microsoft Graph API</li><li>Copilot Studio</li></ul>
-      </div>
-      <div class="card">
-        <div class="skill-head"><span class="icon-chip icon-chip-sm tone-blue"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></span><h3>Spoken languages</h3></div>
-        <ul class="chips"><li>Italian · native</li><li>English · professional</li><li>Spanish · basic</li></ul>
+      <div class="skill-group">
+        <h3>Analytics &amp; BI</h3>
+        <ul class="chips"><li>Power BI</li><li>Qlik Sense</li><li>Qlik Cloud</li><li>Tableau</li><li>KNIME</li><li>R</li><li>KPI modeling</li><li>Reporting automation</li></ul>
       </div>
     </div>
   </section>
@@ -335,24 +337,21 @@
   <!-- Education -->
   <section class="section container" id="education">
     <div class="section-head">
-      <span class="icon-chip tone-blue"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></span>
       <h2>Education</h2>
     </div>
     <ol class="timeline">
       <li class="timeline-item">
-        <div class="card">
-          <div class="row-head">
-            <h3 class="role-title">MSc in Data Science</h3>
-            <span class="date-chip">Graduated Oct 2026</span>
-          </div>
-          <p class="meta">University of Milano-Bicocca, Milan · 110/110 cum laude</p>
-          <p>Thesis in collaboration with Electrolux Professional Group: <em>A Property-Graph Recommender System for Industrial Product Substitution</em>.</p>
-          <div class="grad-media">
-            <img src="media/graduation.jpg" alt="Luca wearing a laurel wreath and holding his MSc thesis outside the University of Milano-Bicocca" width="640" height="800" loading="lazy">
-            <div class="grad-notes">
-              <p>Laurel wreath included. <button type="button" class="inline-link" data-dialog-open="graduation-dialog" data-goatcounter-click="video-graduation">Watch the proclamation<svg class="icon icon-sm" aria-hidden="true"><use href="#i-play"/></svg></button></p>
-              <p>The final thesis was submitted at a McDonald's 🍟 <button type="button" class="inline-link" data-dialog-open="mcdonalds-dialog" data-goatcounter-click="photo-mcdonalds">see the proof</button></p>
+        <div class="card edu-main">
+          <img class="edu-photo" src="media/graduation.jpg" alt="Luca wearing a laurel wreath and holding his MSc thesis outside the University of Milano-Bicocca" width="640" height="800" loading="lazy">
+          <div class="edu-body">
+            <div class="row-head">
+              <h3 class="role-title">MSc in Data Science</h3>
+              <span class="date-chip">Graduated Oct 2026</span>
             </div>
+            <p class="meta">University of Milano-Bicocca, Milan · 110/110 cum laude</p>
+            <p>Thesis with Electrolux Professional Group, <em>A Property-Graph Recommender System for Industrial Product Substitution</em>, on the <a href="#work">similarity service now in production</a>.</p>
+            <p class="edu-note">Laurel wreath included. <button type="button" class="inline-link" data-dialog-open="graduation-dialog" data-goatcounter-click="video-graduation">Watch the proclamation<svg class="icon icon-sm" aria-hidden="true"><use href="#i-play"/></svg></button></p>
+            <p class="edu-note">The final thesis was submitted at a McDonald's 🍟 <button type="button" class="inline-link" data-dialog-open="mcdonalds-dialog" data-goatcounter-click="photo-mcdonalds">see the proof</button></p>
           </div>
         </div>
       </li>
@@ -363,10 +362,7 @@
             <span class="date-chip">Oct 2024 – Jun 2025</span>
           </div>
           <p class="meta">Cracow University of Technology, Krakow</p>
-          <blockquote class="quote">
-            <p>"Mr. Bazzetto consistently distinguished himself as an exceptional student… Combining technical rigor with creativity, Luca is poised to excel in any data-driven environment."</p>
-            <footer>Barbara Borowik, PhD, Associate Professor · <a href="Luca_Bazzetto_Recommendation_Letter_L.pdf" target="_blank" rel="noopener" data-goatcounter-click="download-recommendation">Full letter (PDF)</a></footer>
-          </blockquote>
+          <p>A year abroad in Poland, with a <a href="Luca_Bazzetto_Recommendation_Letter_L.pdf" target="_blank" rel="noopener" data-goatcounter-click="download-recommendation">recommendation letter</a> from Barbara Borowik, PhD.</p>
         </div>
       </li>
       <li class="timeline-item">
@@ -385,7 +381,6 @@
   <!-- Beyond work -->
   <section class="section container" id="beyond">
     <div class="section-head">
-      <span class="icon-chip tone-red"><svg class="icon" aria-hidden="true"><use href="#i-smile"/></svg></span>
       <h2>Beyond work</h2>
     </div>
     <div class="beyond-grid">
@@ -399,24 +394,16 @@
       </article>
 
       <article class="card">
-        <div class="card-top">
-          <span class="icon-chip tone-green"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg></span>
+        <div class="title-row">
+          <span class="icon-chip icon-chip-sm tone-green"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg></span>
+          <h3>Homelab</h3>
         </div>
-        <h3>Homelab</h3>
         <p>Two Raspberry Pis running self-hosted services in Docker:</p>
         <ul class="homelab-list">
           <li><strong>Home Assistant</strong> for home automation</li>
           <li><strong>A personal finance app</strong> I built with PostgreSQL, FastAPI and a React dashboard, deployed with Docker Compose</li>
-          <li><strong>Next up:</strong> moving my <a href="#projects">keynotes calendar</a> pipeline onto the Pi</li>
+          <li><strong>Next up:</strong> moving my <a href="#work">keynotes calendar</a> pipeline onto the Pi</li>
         </ul>
-      </article>
-
-      <article class="card">
-        <div class="card-top">
-          <span class="icon-chip tone-yellow"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></span>
-        </div>
-        <h3>Living abroad</h3>
-        <p>An Erasmus+ year studying Computer Science in Krakow, Poland.</p>
       </article>
     </div>
   </section>
@@ -429,16 +416,13 @@
       <div class="contact-body">
         <h2>Let's talk</h2>
         <p>The fastest way to reach me is email.</p>
-        <a class="contact-email" href="mailto:luca.bazzetto@gmail.com" data-goatcounter-click="email">luca.bazzetto@gmail.com</a>
+        <a class="contact-email" href="mailto:luca.bazzetto@gmail.com" data-goatcounter-click="email"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>luca.bazzetto@gmail.com</a>
         <div class="actions">
-          <a class="btn btn-filled" href="mailto:luca.bazzetto@gmail.com" data-goatcounter-click="email">
-            <svg class="icon" aria-hidden="true"><use href="#i-send"/></svg>Send an email
-          </a>
           <a class="btn btn-surface" href="https://linkedin.com/in/lucabazzetto" target="_blank" rel="noopener" data-goatcounter-click="ext-linkedin">
             <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn
           </a>
           <a class="btn btn-surface" href="Luca_Bazzetto_Resume.pdf" target="_blank" rel="noopener" data-goatcounter-click="download-cv">
-            <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>CV
+            <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download CV
           </a>
         </div>
       </div>

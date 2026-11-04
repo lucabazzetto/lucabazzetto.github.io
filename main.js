@@ -29,8 +29,24 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (!entry.isIntersecting) return;
     navLinks.forEach(link => link.removeAttribute('aria-current'));
-    navLinks.get(entry.target.id)?.setAttribute('aria-current', 'true');
+    const current = navLinks.get(entry.target.id);
+    if (!current) return;
+    current.setAttribute('aria-current', 'true');
+    // On phones the nav scrolls sideways: keep the current link in view
+    const list = current.parentElement.parentElement;
+    if (list.scrollWidth > list.clientWidth) {
+      list.scrollTo({ left: current.offsetLeft - list.clientWidth / 2 + current.offsetWidth / 2 });
+    }
   });
 }, { rootMargin: '-45% 0px -50% 0px' });
 
 document.querySelectorAll('main section[id]').forEach(section => observer.observe(section));
+
+// Fade the right edge of the scrolling nav until its end is reached
+const navList = document.querySelector('.nav-links');
+const updateNavFade = () => navList.classList.toggle(
+  'at-end', navList.scrollLeft + navList.clientWidth >= navList.scrollWidth - 4
+);
+navList.addEventListener('scroll', updateNavFade, { passive: true });
+addEventListener('resize', updateNavFade);
+updateNavFade();
