@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Luca Bazzetto · Data Engineer</title>
-  <meta name="description" content="Luca Bazzetto, Data Engineer at Electrolux Professional Group, based in Italy and Croatia. Pipelines, property graphs and reports on ERP data that sales, finance and support teams use every day.">
+  <meta name="description" content="Luca Bazzetto, Data Engineer at Electrolux Professional Group, based in Italy and Croatia. Pipelines, property graphs and reports on ERP data that teams across the company use every day.">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#f8fafd" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#131314" media="(prefers-color-scheme: dark)">
@@ -13,7 +13,7 @@
   <!-- Link previews (LinkedIn, WhatsApp, Slack, ...) -->
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Luca Bazzetto · Data Engineer">
-  <meta property="og:description" content="Data Engineer at Electrolux Professional Group. Pipelines, property graphs and reports on ERP data that sales, finance and support teams use every day.">
+  <meta property="og:description" content="Data Engineer at Electrolux Professional Group. Pipelines, property graphs and reports on ERP data that teams across the company use every day.">
   <meta property="og:url" content="https://lucabazzetto.github.io/">
   <meta property="og:image" content="https://lucabazzetto.github.io/profile.jpeg">
   <meta name="twitter:card" content="summary">
@@ -103,7 +103,7 @@
     <div class="hero-text">
       <h1>Luca Bazzetto</h1>
       <p class="hero-role">Data Engineer at <strong>Electrolux Professional Group</strong></p>
-      <p class="hero-lead">I turn ERP data into graph models, pipelines and reports that sales, finance and support teams use every day.</p>
+      <p class="hero-lead">I like data that people actually use. I build the pipelines, graphs and reports that teams across the company rely on every day.</p>
       <p class="hero-meta"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Based in Italy / Croatia</p>
       <div class="actions">
         <a class="btn btn-filled" href="Luca_Bazzetto_Resume.pdf" target="_blank" rel="noopener" data-goatcounter-click="download-cv">
@@ -131,14 +131,14 @@
 
   <!-- Highlights: each tile links to the section that proves it -->
   <section class="stats container" aria-label="Highlights">
-    <a class="stat tone-blue" href="#work"><svg class="icon stat-arrow" aria-hidden="true"><use href="#i-arrow-down"/></svg><strong>60k+</strong><span>products in a similarity service used by sales</span></a>
+    <a class="stat tone-blue" href="#work"><svg class="icon stat-arrow" aria-hidden="true"><use href="#i-arrow-down"/></svg><strong>60k+</strong><span>products in a similarity service in production</span></a>
     <a class="stat tone-green" href="#work"><svg class="icon stat-arrow" aria-hidden="true"><use href="#i-arrow-down"/></svg><strong>4</strong><span>data initiatives I led end to end, all in production</span></a>
     <a class="stat tone-yellow" href="#warehouse"><svg class="icon stat-arrow" aria-hidden="true"><use href="#i-arrow-down"/></svg><strong>7</strong><span>source databases feeding the warehouse I maintain</span></a>
     <a class="stat tone-red" href="#education"><svg class="icon stat-arrow" aria-hidden="true"><use href="#i-arrow-down"/></svg><strong>110/110</strong><span>cum laude, MSc in Data Science</span></a>
   </section>
 
   <!-- About -->
-  <section class="section container" id="about">
+  <section class="section container about" id="about">
     <div class="section-head">
       <h2>About</h2>
     </div>
@@ -147,8 +147,12 @@
       <p>The part I enjoy most is where data engineering meets graphs and AI. Off-screen, you can usually find me
         <a class="inline-link" href="media/snowboard.mp4" data-dialog-open="snowboard-dialog" data-goatcounter-click="video-snowboard">carving fresh tracks on my snowboard<svg class="icon icon-sm" aria-hidden="true"><use href="#i-play"/></svg></a>
         or over-engineering Docker containers on my <a href="#beyond">self-hosted Raspberry Pi home servers</a>.</p>
-      <p class="languages"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>Italian (native) · English (professional) · Spanish (basic)</p>
     </div>
+    <dl class="glance">
+      <div><dt><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg>Now</dt><dd>Data Engineer at Electrolux Professional Group, since Feb 2026</dd></div>
+      <div><dt><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Based in</dt><dd>Italy / Croatia</dd></div>
+      <div><dt><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>Languages</dt><dd>Italian (native), English (professional), Spanish (basic)</dd></div>
+    </dl>
   </section>
 
   <!-- Work in production -->
@@ -174,7 +178,6 @@
         <dl class="facts">
           <div><dt>60k+</dt><dd>products in the graph</dd></div>
           <div><dt>~2 h</dt><dd>a day saved, as sales users report</dd></div>
-          <div><dt>2</dt><dd>sales teams using it, Laundry and Food Service</dd></div>
         </dl>
       </article>
 
@@ -183,8 +186,11 @@
           <span class="icon-chip icon-chip-sm tone-red"><svg class="icon" aria-hidden="true"><use href="#i-database"/></svg></span>
           <h3>Warehouse pipelines</h3>
         </div>
-        <p>I maintain the pipelines that load 7 source databases (JD Edwards, Oracle EBS, SQL Server and IBM DB2) into the data warehouse, about 300 tables in Oracle Data Integrator and about 100 replicated with GoldenGate, with alerts on replication failures.</p>
-        <p>I'm also introducing Apache Airflow, with DAGs that check every hour that the tables stay in sync and that run the Qlik reloads.</p>
+        <dl class="card-facts">
+          <div><dt>~300</dt><dd>tables in Oracle Data Integrator</dd></div>
+          <div><dt>~100</dt><dd>replicated with GoldenGate</dd></div>
+        </dl>
+        <p>Pipelines from 7 source databases (JD Edwards, Oracle EBS, SQL Server, IBM DB2) into the data warehouse, with alerts on replication failures. I'm introducing Apache Airflow for hourly sync checks and Qlik reloads.</p>
         <ul class="chips"><li>Oracle Data Integrator</li><li>GoldenGate (CDC)</li><li>Apache Airflow</li></ul>
       </article>
 
@@ -193,16 +199,24 @@
           <span class="icon-chip icon-chip-sm tone-green"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></span>
           <h3>Bill of Materials graph</h3>
         </div>
-        <p>Product structures from 4 source systems in one property graph, cleaned and queried every day by the call-center AI bot to answer questions about components and spare parts.</p>
+        <dl class="card-facts">
+          <div><dt>4</dt><dd>source systems in one graph</dd></div>
+          <div><dt>Daily</dt><dd>queried by the call-center AI bot</dd></div>
+        </dl>
+        <p>Product structures cleaned into one property graph, so the bot can answer questions about components and spare parts.</p>
         <ul class="chips"><li>Property graph</li><li>Data modeling</li><li>Text-to-SQL</li></ul>
       </article>
 
       <article class="card work-item">
         <div class="title-row">
           <span class="icon-chip icon-chip-sm tone-yellow"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg></span>
-          <h3>Reporting in Oracle APEX</h3>
+          <h3>APEX reporting</h3>
         </div>
-        <p>I migrated the ~22 legacy reports still in use for about 200 users, and now own every new request, 20+ reports so far. One is an on-demand finance reconciliation that triggers OCI Data Integration jobs for just the data a controller filters, saving days of manual work.</p>
+        <dl class="card-facts">
+          <div><dt>~22</dt><dd>legacy reports migrated</dd></div>
+          <div><dt>20+</dt><dd>new reports since</dd></div>
+        </dl>
+        <p>Used by about 200 people in supply chain, logistics, manufacturing and finance. One is an on-demand finance reconciliation that saves controllers days of work.</p>
         <ul class="chips"><li>Oracle APEX</li><li>OCI Data Integration</li><li>PL/SQL</li></ul>
       </article>
     </div>
@@ -260,7 +274,7 @@
   </section>
 
   <!-- Experience -->
-  <section class="section container" id="experience">
+  <section class="section container experience" id="experience">
     <div class="section-head">
       <h2>Experience</h2>
     </div>
