@@ -4,14 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Luca Bazzetto · Data Engineer</title>
-  <meta name="description" content="Luca Bazzetto, Data Engineer at Electrolux Professional Group, based in Italy and Croatia. Enterprise data products, analytics platforms, graph data modeling and AI-ready data.">
+  <meta name="description" content="Luca Bazzetto, Data Engineer at Electrolux Professional Group, based in Italy and Croatia. Pipelines, property graphs and reports on ERP data that sales, finance and support teams use every day.">
   <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f8fafd" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#131314" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://lucabazzetto.github.io/">
 
   <!-- Link previews (LinkedIn, WhatsApp, Slack, ...) -->
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Luca Bazzetto · Data Engineer">
-  <meta property="og:description" content="Data Engineer at Electrolux Professional Group. Enterprise data products, analytics platforms, graph data modeling and AI-ready data.">
+  <meta property="og:description" content="Data Engineer at Electrolux Professional Group. Pipelines, property graphs and reports on ERP data that sales, finance and support teams use every day.">
   <meta property="og:url" content="https://lucabazzetto.github.io/">
   <meta property="og:image" content="https://lucabazzetto.github.io/profile.jpeg">
   <meta name="twitter:card" content="summary">
@@ -27,6 +29,7 @@
     "@type": "Person",
     "name": "Luca Bazzetto",
     "jobTitle": "Data Engineer",
+    "image": "https://lucabazzetto.github.io/profile.jpeg",
     "url": "https://lucabazzetto.github.io/",
     "address": [
       { "@type": "PostalAddress", "addressCountry": "IT" },
@@ -52,6 +55,8 @@
   <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
   <symbol id="i-play" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></symbol>
+  <symbol id="i-arrow-down" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
   <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
   <symbol id="i-user" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
   <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
@@ -87,6 +92,7 @@
       <li><a href="#education">Education</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <a class="nav-cv" href="Luca_Bazzetto_Resume.pdf" target="_blank" rel="noopener" data-goatcounter-click="download-cv"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-download"/></svg>CV</a>
   </nav>
 </header>
 
@@ -101,7 +107,7 @@
       <p class="hero-meta"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Based in Italy / Croatia</p>
       <div class="actions">
         <a class="btn btn-filled" href="Luca_Bazzetto_Resume.pdf" target="_blank" rel="noopener" data-goatcounter-click="download-cv">
-          <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download CV
+          <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>View CV
         </a>
         <a class="btn btn-tonal" href="https://linkedin.com/in/lucabazzetto" target="_blank" rel="noopener" data-goatcounter-click="ext-linkedin">
           <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn
@@ -119,27 +125,27 @@
       <span class="shape shape-square" aria-hidden="true"></span>
       <span class="shape shape-triangle" aria-hidden="true"></span>
       <span class="shape shape-pill" aria-hidden="true"></span>
-      <img class="hero-photo" src="img/profile-480.jpg" width="480" height="473" alt="Luca Bazzetto">
+      <img class="hero-photo" src="img/profile-480.jpg" srcset="img/profile-480.jpg 480w, profile.jpeg 796w" sizes="(max-width: 48rem) 88px, 292px" width="480" height="473" alt="Luca Bazzetto">
     </div>
   </section>
 
   <!-- Highlights: each tile links to the section that proves it -->
   <section class="stats container" aria-label="Highlights">
-    <a class="stat tone-blue" href="#work"><strong>60k+</strong><span>products in a similarity service used by sales</span></a>
-    <a class="stat tone-green" href="#work"><strong>4</strong><span>data initiatives I led end to end, all in production</span></a>
-    <a class="stat tone-yellow" href="#experience"><strong>7</strong><span>source databases feeding the warehouse I maintain</span></a>
-    <a class="stat tone-red" href="#education"><strong>110/110</strong><span>cum laude, MSc in Data Science</span></a>
+    <a class="stat tone-blue" href="#work"><svg class="icon stat-arrow" aria-hidden="true"><use href="#i-arrow-down"/></svg><strong>60k+</strong><span>products in a similarity service used by sales</span></a>
+    <a class="stat tone-green" href="#work"><svg class="icon stat-arrow" aria-hidden="true"><use href="#i-arrow-down"/></svg><strong>4</strong><span>data initiatives I led end to end, all in production</span></a>
+    <a class="stat tone-yellow" href="#warehouse"><svg class="icon stat-arrow" aria-hidden="true"><use href="#i-arrow-down"/></svg><strong>7</strong><span>source databases feeding the warehouse I maintain</span></a>
+    <a class="stat tone-red" href="#education"><svg class="icon stat-arrow" aria-hidden="true"><use href="#i-arrow-down"/></svg><strong>110/110</strong><span>cum laude, MSc in Data Science</span></a>
   </section>
 
   <!-- About -->
   <section class="section container" id="about">
     <div class="section-head">
-      <h2>About me</h2>
+      <h2>About</h2>
     </div>
     <div class="prose">
       <p>I joined Electrolux Professional Group as an intern in 2025 and was hired as a Data Engineer in February 2026. I integrate data from many business systems into one governed analytics platform, and build the data products on top of it that Finance, Supply Chain, Manufacturing, HR and Operations use.</p>
       <p>The part I enjoy most is where data engineering meets graphs and AI. Off-screen, you can usually find me
-        <button type="button" class="inline-link" data-dialog-open="snowboard-dialog" data-goatcounter-click="video-snowboard">carving fresh tracks on my snowboard<svg class="icon icon-sm" aria-hidden="true"><use href="#i-play"/></svg></button>
+        <a class="inline-link" href="media/snowboard.mp4" data-dialog-open="snowboard-dialog" data-goatcounter-click="video-snowboard">carving fresh tracks on my snowboard<svg class="icon icon-sm" aria-hidden="true"><use href="#i-play"/></svg></a>
         or over-engineering Docker containers on my <a href="#beyond">self-hosted Raspberry Pi home servers</a>.</p>
       <p class="languages"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>Italian (native) · English (professional) · Spanish (basic)</p>
     </div>
@@ -153,16 +159,33 @@
 
     <div class="work-grid">
       <article class="card work-main">
-        <div class="card-top">
-          <div class="title-row">
-            <span class="icon-chip tone-blue"><svg class="icon" aria-hidden="true"><use href="#i-graph"/></svg></span>
-            <h3>Product similarity service</h3>
+        <div class="work-main-body">
+          <div class="card-top">
+            <div class="title-row">
+              <span class="icon-chip tone-blue"><svg class="icon" aria-hidden="true"><use href="#i-graph"/></svg></span>
+              <h3>Product similarity service</h3>
+            </div>
+            <span class="status-chip"><span class="live-dot" aria-hidden="true"></span>In production</span>
           </div>
-          <span class="status-chip"><span class="live-dot" aria-hidden="true"></span>In production</span>
+          <p>A property graph of the product catalogue, combined with text embeddings and live warehouse stock. It suggests alternatives in seconds, so a missing product doesn't mean a lost customer.</p>
+          <p>I co-designed it with a colleague, and it became my <a href="#education">MSc thesis</a>.</p>
+          <ul class="chips"><li>SQL/PGQ</li><li>Embeddings</li><li>Oracle Database</li></ul>
         </div>
-        <p>A property graph over 60k+ products, combined with text embeddings and live warehouse stock, that suggests alternatives in seconds, so a missing product doesn't mean a lost customer. Laundry and Food Service sales teams use it, and report saving about 2 hours a day.</p>
-        <p>I co-designed it with a colleague, and it became my <a href="#education">MSc thesis</a>.</p>
-        <ul class="chips"><li>SQL/PGQ</li><li>Embeddings</li><li>Oracle Database</li></ul>
+        <dl class="facts">
+          <div><dt>60k+</dt><dd>products in the graph</dd></div>
+          <div><dt>~2 h</dt><dd>a day saved, as sales users report</dd></div>
+          <div><dt>2</dt><dd>sales teams using it, Laundry and Food Service</dd></div>
+        </dl>
+      </article>
+
+      <article class="card work-item" id="warehouse">
+        <div class="title-row">
+          <span class="icon-chip icon-chip-sm tone-red"><svg class="icon" aria-hidden="true"><use href="#i-database"/></svg></span>
+          <h3>Warehouse pipelines</h3>
+        </div>
+        <p>I maintain the pipelines that load 7 source databases (JD Edwards, Oracle EBS, SQL Server and IBM DB2) into the data warehouse, about 300 tables in Oracle Data Integrator and about 100 replicated with GoldenGate, with alerts on replication failures.</p>
+        <p>I'm also introducing Apache Airflow, with DAGs that check every hour that the tables stay in sync and that run the Qlik reloads.</p>
+        <ul class="chips"><li>Oracle Data Integrator</li><li>GoldenGate (CDC)</li><li>Apache Airflow</li></ul>
       </article>
 
       <article class="card work-item">
@@ -183,6 +206,8 @@
         <ul class="chips"><li>Oracle APEX</li><li>OCI Data Integration</li><li>PL/SQL</li></ul>
       </article>
     </div>
+
+    <p class="also-led">I also led two more initiatives end to end, procurement reports in Oracle APEX and an AI-usage analytics project, both in production.</p>
 
     <h3 class="subhead">Side projects</h3>
     <div class="side-grid">
@@ -234,16 +259,6 @@
     <p class="more">More on GitHub: <a href="https://github.com/lucabazzetto/FilmReviewsScraper" target="_blank" rel="noopener">film reviews scraper</a> · <a href="https://github.com/lucabazzetto?tab=repositories" target="_blank" rel="noopener">all repositories</a></p>
   </section>
 
-  <!-- Recommendation -->
-  <section class="container quote-band" aria-label="Recommendation">
-    <figure class="pull-quote">
-      <blockquote>
-        <p>“Mr. Bazzetto consistently distinguished himself as an exceptional student… Combining technical rigor with creativity, Luca is poised to excel in any data-driven environment.”</p>
-      </blockquote>
-      <figcaption>Barbara Borowik, PhD, Associate Professor, Cracow University of Technology · <a href="Luca_Bazzetto_Recommendation_Letter_L.pdf" target="_blank" rel="noopener" data-goatcounter-click="download-recommendation">Full letter (PDF)</a></figcaption>
-    </figure>
-  </section>
-
   <!-- Experience -->
   <section class="section container" id="experience">
     <div class="section-head">
@@ -262,7 +277,7 @@
             <div class="row-head">
               <h4 class="role-title">Data Engineer</h4>
               <span class="chip-row">
-                <span class="date-chip">Hybrid</span>
+                <span class="meta">Hybrid</span>
                 <span class="date-chip">Feb 2026 – Present</span>
               </span>
             </div>
@@ -270,7 +285,7 @@
               <li>Co-designed a product-similarity service on graphs and embeddings, in production for B2B sales.</li>
               <li>Built the Bill of Materials graph that the call-center AI bot queries every day.</li>
               <li>Own reporting in Oracle APEX, from user requests and specs to reviewing what a teammate builds.</li>
-              <li>Maintain the ODI and GoldenGate pipelines from 7 source databases into the data warehouse, and am introducing Apache Airflow.</li>
+              <li>Maintain the Oracle Data Integrator (ODI) and GoldenGate pipelines from 7 source databases into the data warehouse, and am introducing Apache Airflow.</li>
             </ul>
           </div>
 
@@ -280,7 +295,7 @@
               <span class="date-chip">Sep 2025 – Feb 2026</span>
             </div>
             <ul class="bullets">
-              <li>Built Oracle Data Integrator (ODI) mappings, Load Plans and nightly batch jobs, and added alerts on GoldenGate replication failures.</li>
+              <li>Built ODI mappings, Load Plans and nightly batch jobs, and added alerts on GoldenGate replication failures.</li>
               <li>Built a Python agent with Azure OpenAI and the Microsoft Graph API that turns free-text emails into structured product-coding requests, matched against 6,500+ suppliers.</li>
               <li>Migrated all ~22 legacy reports still in use to Oracle APEX for ~200 users across supply chain, logistics, manufacturing and finance, with company-level access control.</li>
             </ul>
@@ -318,6 +333,8 @@
       <h3>Core stack</h3>
       <ul class="chips chips-core"><li>SQL &amp; PL/SQL</li><li>Oracle Database</li><li>Oracle Data Integrator</li><li>GoldenGate (CDC)</li><li>SQL/PGQ</li><li>Python</li><li>Oracle APEX</li><li>Apache Airflow</li></ul>
     </div>
+    <details class="skill-more" open>
+      <summary class="text-btn">Full skill list</summary>
     <div class="skill-groups">
       <div class="skill-group">
         <h3>Data engineering</h3>
@@ -332,6 +349,7 @@
         <ul class="chips"><li>Power BI</li><li>Qlik Sense</li><li>Qlik Cloud</li><li>Tableau</li><li>KNIME</li><li>R</li><li>KPI modeling</li><li>Reporting automation</li></ul>
       </div>
     </div>
+    </details>
   </section>
 
   <!-- Education -->
@@ -350,23 +368,28 @@
             </div>
             <p class="meta">University of Milano-Bicocca, Milan · 110/110 cum laude</p>
             <p>Thesis with Electrolux Professional Group, <em>A Property-Graph Recommender System for Industrial Product Substitution</em>, on the <a href="#work">similarity service now in production</a>.</p>
-            <p class="edu-note">Laurel wreath included. <button type="button" class="inline-link" data-dialog-open="graduation-dialog" data-goatcounter-click="video-graduation">Watch the proclamation<svg class="icon icon-sm" aria-hidden="true"><use href="#i-play"/></svg></button></p>
-            <p class="edu-note">The final thesis was submitted at a McDonald's 🍟 <button type="button" class="inline-link" data-dialog-open="mcdonalds-dialog" data-goatcounter-click="photo-mcdonalds">see the proof</button></p>
+            <p class="edu-note">Laurel wreath included. <a class="inline-link" href="media/graduation.mp4" data-dialog-open="graduation-dialog" data-goatcounter-click="video-graduation">Watch the proclamation<svg class="icon icon-sm" aria-hidden="true"><use href="#i-play"/></svg></a></p>
+            <p class="edu-note">The final thesis was submitted at a McDonald's 🍟 <a class="inline-link" href="media/thesis-mcdonalds.jpg" data-dialog-open="mcdonalds-dialog" data-goatcounter-click="photo-mcdonalds">see the proof</a></p>
           </div>
         </div>
       </li>
       <li class="timeline-item">
-        <div class="card">
+        <div class="card edu-minor">
           <div class="row-head">
             <h3 class="role-title">Erasmus+ Exchange, Computer Science</h3>
             <span class="date-chip">Oct 2024 – Jun 2025</span>
           </div>
           <p class="meta">Cracow University of Technology, Krakow</p>
-          <p>A year abroad in Poland, with a <a href="Luca_Bazzetto_Recommendation_Letter_L.pdf" target="_blank" rel="noopener" data-goatcounter-click="download-recommendation">recommendation letter</a> from Barbara Borowik, PhD.</p>
+      <figure class="pull-quote">
+        <blockquote>
+          <p>“Mr. Bazzetto consistently distinguished himself as an exceptional student… Combining technical rigor with creativity, Luca is poised to excel in any data-driven environment.”</p>
+        </blockquote>
+        <figcaption>Barbara Borowik, PhD, Associate Professor · <a href="Luca_Bazzetto_Recommendation_Letter_L.pdf" target="_blank" rel="noopener" data-goatcounter-click="download-recommendation">Full letter (PDF)</a></figcaption>
+      </figure>
         </div>
       </li>
       <li class="timeline-item">
-        <div class="card">
+        <div class="card edu-minor">
           <div class="row-head">
             <h3 class="role-title">BSc in Computer Science</h3>
             <span class="date-chip">Graduated Oct 2022</span>
@@ -385,19 +408,16 @@
     </div>
     <div class="beyond-grid">
       <article class="card">
-        <button type="button" class="video-thumb" data-dialog-open="snowboard-dialog" data-goatcounter-click="video-snowboard" aria-label="Play snowboarding video">
+        <a class="video-thumb" href="media/snowboard.mp4" data-dialog-open="snowboard-dialog" data-goatcounter-click="video-snowboard" aria-label="Play snowboarding video">
           <img src="media/snowboard-poster.jpg" alt="" loading="lazy">
           <span class="play-button"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></span>
-        </button>
+        </a>
         <h3>Snowboarding</h3>
         <p>When there's fresh snow, I'm in the mountains on my snowboard.</p>
       </article>
 
       <article class="card">
-        <div class="title-row">
-          <span class="icon-chip icon-chip-sm tone-green"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg></span>
-          <h3>Homelab</h3>
-        </div>
+        <h3>Homelab</h3>
         <p>Two Raspberry Pis running self-hosted services in Docker:</p>
         <ul class="homelab-list">
           <li><strong>Home Assistant</strong> for home automation</li>
@@ -416,15 +436,19 @@
       <div class="contact-body">
         <h2>Let's talk</h2>
         <p>The fastest way to reach me is email.</p>
-        <a class="contact-email" href="mailto:luca.bazzetto@gmail.com" data-goatcounter-click="email"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>luca.bazzetto@gmail.com</a>
+        <a class="contact-email" href="mailto:luca.bazzetto@gmail.com" data-goatcounter-click="email"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>luca.bazzetto@<wbr>gmail.com</a>
         <div class="actions">
-          <a class="btn btn-surface" href="https://linkedin.com/in/lucabazzetto" target="_blank" rel="noopener" data-goatcounter-click="ext-linkedin">
+          <button type="button" class="btn btn-inverse" data-copy="luca.bazzetto@gmail.com" data-goatcounter-click="copy-email" hidden>
+            <svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copy email</span>
+          </button>
+          <a class="btn btn-inverse" href="https://linkedin.com/in/lucabazzetto" target="_blank" rel="noopener" data-goatcounter-click="ext-linkedin">
             <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn
           </a>
-          <a class="btn btn-surface" href="Luca_Bazzetto_Resume.pdf" target="_blank" rel="noopener" data-goatcounter-click="download-cv">
-            <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download CV
+          <a class="btn btn-inverse" href="Luca_Bazzetto_Resume.pdf" target="_blank" rel="noopener" data-goatcounter-click="download-cv">
+            <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>View CV
           </a>
         </div>
+        <p class="copy-status" role="status" aria-live="polite"></p>
       </div>
     </div>
   </section>
